@@ -1,0 +1,19 @@
+== Suppressed Messages ==
+
+# No schematrons available for Logical Models
+The link 'StructureDefinition-Observation.sch' for "Schematron" cannot be resolved
+The link 'StructureDefinition-Any.sch' for "Schematron" cannot be resolved
+The link 'StructureDefinition-Encounter2.sch' for "Schematron" cannot be resolved
+The link 'StructureDefinition-Encounter.sch' for "Schematron" cannot be resolved
+The link 'StructureDefinition-LabResult.sch' for "Schematron" cannot be resolved
+The link 'StructureDefinition-LabResult2.sch' for "Schematron" cannot be resolved
+The link 'StructureDefinition-Medication.sch' for "Schematron" cannot be resolved
+The link 'StructureDefinition-Medication2.sch' for "Schematron" cannot be resolved
+The link 'StructureDefinition-Observation2.sch' for "Schematron" cannot be resolved
+The link 'StructureDefinition-Patient.sch' for "Schematron" cannot be resolved
+The link 'StructureDefinition-PatientSet.sch' for "Schematron" cannot be resolved
+The link 'StructureDefinition-PatientSet2.sch' for "Schematron" cannot be resolved
+The link 'StructureDefinition-Problem.sch' for "Schematron" cannot be resolved
+The link 'StructureDefinition-Problem2.sch' for "Schematron" cannot be resolved
+
+

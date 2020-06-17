@@ -1,0 +1,39 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "UriIdStp",
+  "id": "UriIdStp",
+  "title": "Identificativi per codici STP regionali",
+  "description": "Identificativi per codici regionali.",
+  "version": "0.1.0",
+  "url": "http://hl7.it/fhir/ValueSet/UriIdStp",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:ietf:rfc:3986",
+        "concept": [
+          {
+            "code": "http://hl7.it/sid/stp",
+            "display": "Codici STP"
+          },
+          {
+            "code": "http://hl7.it/sid/lazio/stp",
+            "display": "Codici STP - Lazio"
+          },
+          {
+            "code": "http://hl7.it/sid/piemonte/stp",
+            "display": "Codici STP - Piemonte"
+          },
+          {
+            "code": "http://hl7.it/sid/vallee/stp",
+            "display": "Codici STP - Valle d'Aosta"
+          },
+          {
+            "code": "urn:oid:2.16.840.1.113883.2.9.2.50.4.1.1",
+            "display": "Codici STP - Veneto"
+          }
+        ]
+      }
+    ]
+  }
+}

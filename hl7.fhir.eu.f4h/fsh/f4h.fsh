@@ -1,0 +1,108 @@
+//============== ALIAS ===============
+Alias: temp_profile = http://hl7.org/fhir/StructureDefinition/bodytemp
+Alias: os_profile = http://hl7.org/fhir/StructureDefinition/oxygensat
+Alias: ICD10 = http://hl7.org/fhir/sid/icd-10
+//=========================
+
+//====== Profiles =====================================
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Profile:  PatientF4h
+Parent:   Patient
+Id:       Patient-eu-f4h
+Title:    "Patient (Fair4Health)"
+Description: "This profile defines how to represent Patient resources in FHIR in the context of the Fair4Health project."
+
+//-------------------------------------------------------------------------------------------
+
+* identifier 1..* MS
+* gender 1..1 MS
+* birthDate 1..1 MS
+* address.country 1..1 MS //add binding to ISO alpha-2
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Profile:  EncounterF4h
+Parent:   Encounter
+Id:       Encounter-eu-f4h
+Title:    "Encounter (Fair4Health)"
+Description: "This profile defines how to represent Encounter resources in FHIR in the context of the Fair4Health project."
+
+//-------------------------------------------------------------------------------------------
+
+* identifier 1..* MS
+* status  MS // required  check if it should be fixed
+* subject 1..1 MS
+* subject only Reference(PatientF4h)
+* period 1..1 MS
+* diagnosis 1..1 MS
+* diagnosis.condition 1..1 MS 
+* diagnosis.rank 1..1 MS 
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Profile:  ConditionF4h
+Parent:   Condition
+Id:       Condition-eu-f4h
+Title:    "Condition (Fair4Health)"
+Description: "This profile defines how to represent Condition resources in FHIR in the context of the Fair4Health project."
+
+//-------------------------------------------------------------------------------------------
+
+* identifier 1..* MS
+* code 1..1 MS
+* code.coding ^slicing.discriminator[0].type = #value
+* code.coding ^slicing.discriminator[0].path = "$this"
+* code.coding ^slicing.rules = #open
+* code.coding contains 
+	snomed 0..1 
+	and icd10 0..1
+* code.coding[snomed] ^short = "SNOMED CT concepts"
+* code.coding[snomed].system = "http://snomed.info/sct" (exactly)
+* code.coding from http://hl7.eu/fhir/f4h/ValueSet/diseases-f4h-sct (required)
+* code.coding[icd10] ^short = "SNOMED CT concepts"
+* code.coding[icd10].system = ICD10 (exactly)
+* code.coding from http://hl7.eu/fhir/f4h/ValueSet/diseases-f4h-icd10 (required)
+* onsetDateTime 1..1 MS
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: VsDiseasesF4hIcd10
+Id: diseases-f4h-icd10
+Title: "Diseases F4H Use Cases 1 and 2 (ICD 10)"
+Description: "Diseases to be tracked for the FAIR4Health use cases 1 and 2. This value set is based on WHO ICD10"
+//-------------------------------------------------------------------------------------------
+* ^copyright = "Licensing note: WHO encourages the development of software tools and applications using WHO classifications for use by the wider medical community and researchers, as long as those products provide a range of functions, including search and retrieval of classification terms. Companies and organizations wishing to obtain a licence are asked to complete the application form so that the proposed use of the classifications is evaluated and eventually a licence proposed."
+
+* ICD10#I50	"Heart Failure"
+* ICD10#I10	"Hypertension"
+* ICD10#N18	"Chronic Kidney Disease"
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Profile:  ObservationF4h
+Parent:   Observation
+Id:       Observation-eu-f4h
+Title:    "Observation, generic (Fair4Health)"
+Description: "This profile defines how to represent Observation resources in FHIR in the context of the Fair4Health project."
+//===
+* identifier 1..* MS
+* effective[x] 1..1 MS
+* effective[x] only dateTime or Period
+* code 1..1 MS // any binding ?
+* value[x] MS // any constraint ?
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Profile:  ObservationLabF4h
+Parent:   ObservationF4h
+Id:       Observation-lab-eu-f4h
+Title:    "Observation, laboratory result (Fair4Health)"
+Description: "This profile defines how to represent Observation resources in FHIR in the context of the Fair4Health project."
+-------------------------------------------------------------------------------------------
+SHOULD WE SPECIFY ANY BINDING ?
+
+* code from http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-observations-uv-ips (extensible)
+* value[x] only Quantity or CodeableConcept
+-------------------------------------------------------------------------------------------*/

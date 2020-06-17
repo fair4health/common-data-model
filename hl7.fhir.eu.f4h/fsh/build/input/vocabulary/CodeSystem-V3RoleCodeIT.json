@@ -1,0 +1,65 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "RoleCodeIT",
+  "id": "V3RoleCodeIT",
+  "title": "Estensione del Vocabolario HL7 V3 RoleCode",
+  "description": "Estensione del Vocabolario HL7 V3 RoleCode",
+  "version": "0.1.0",
+  "url": "http://hl7.it/fhir/CodeSystem/V3RoleCodeIT",
+  "concept": [
+    {
+      "code": "MMG",
+      "display": "medico di medicina generale"
+    },
+    {
+      "code": "PLS",
+      "display": "pediatra di libera scelta"
+    },
+    {
+      "code": "MSD",
+      "display": "medico del servizio/struttura del distretto/azienda"
+    },
+    {
+      "code": "MCA",
+      "display": "medico continuità assistenziale"
+    },
+    {
+      "code": "MO",
+      "display": "medico ospedaliero"
+    },
+    {
+      "code": "MSA",
+      "display": "medico specialista ambulatoriale"
+    },
+    {
+      "code": "MAU",
+      "display": "medico di azienda ospedaliero-universitaria"
+    },
+    {
+      "code": "GMT",
+      "display": "guardia medica turistica"
+    },
+    {
+      "code": "SPA",
+      "display": "specialista di struttura privata accreditata"
+    },
+    {
+      "code": "MI",
+      "display": "medico INAIL"
+    },
+    {
+      "code": "MC",
+      "display": "medico consulente"
+    },
+    {
+      "code": "AS",
+      "display": "altra specializzazione"
+    },
+    {
+      "code": "AA",
+      "display": "altro (tirocinanti, specializzandi, etc)"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+<ConceptMap xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../fhir-all-xsd/codesystem.xsd">
+	<id value="ConceptMap-f4h-Patient"/>
+	<url value="http://hl7.eu/fhir/f4h/ConceptMap/ConceptMap-f4h-Patient"/>
+	<version value="4.0.1"/>
+	<name value="ConceptMapF4hPatient"/>
+	<title value="Mapping - Patient - Logical Model to Profile"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<date value="2012-06-13"/>
+	<publisher value="FAIR4Health"/>
+	<contact>
+		<name value="HL7 Italia"/>
+		<telecom>
+			<system value="url"/>
+			<value value="http://hl7.it"/>
+		</telecom>
+	</contact>
+	<description value="Mapping from the FAIR4Health Patient  Logical Model to the FHIR Patient Profile."/>
+	<jurisdiction>
+		<coding>
+			<system value="urn:iso:std:iso:3166"/>
+			<code value="IT"/>
+		</coding>
+	</jurisdiction>
+	<purpose value="Mapping Example."/>
+	<sourceUri value="http://hl7.eu/fhir/f4h/StructureDefinition/Patient"/>
+	<targetUri value="http://hl7.eu/fhir/f4h/StructureDefinition/Patient-eu-f4h"/>
+	<group>
+		<source value="http://hl7.eu/fhir/f4h/StructureDefinition/Patient"/>
+		<target value="http://hl7.eu/fhir/f4h/StructureDefinition/Patient-eu-f4h"/>
+		<element>
+			<code value="Patient"/>
+			<display value="Patient F4H Attributes"/>
+			<target>
+				<code value="Patient"/>
+				<display value="Patient resource - root"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="Patient.healthcareIdentifier"/>
+			<display value="Patient identifier"/>
+			<target>
+				<code value="Patient.identifier"/>
+				<display value="Patient identifier"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="Patient.name.family"/>
+			<display value="Patient’s family name"/>
+			<target>
+				<code value="Patient.name.family"/>
+				<display value="Patient’s family name"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="Patient.name.given"/>
+			<display value="Patient’s given name"/>
+			<target>
+			<code value="Patient.name.given"/>
+			<display value="Patient’s given name"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="Patient.gender"/>
+			<display value="Administrative gender"/>
+			<target>
+				<code value="Patient.gender"/>
+				<display value="Administrative gender"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="Patient.dateOfBirth"/>
+			<display value="Patient's value date of birth"/>
+			<target>
+				<code value="Patient.birthDate"/>
+				<display value="Patient's value date of birth"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+	</group>
+</ConceptMap>

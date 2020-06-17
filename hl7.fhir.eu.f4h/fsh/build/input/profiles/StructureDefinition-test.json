@@ -1,0 +1,31 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "test",
+  "url": "http://hl7.eu/fhir/gk/StructureDefinition/test",
+  "version": "0.1.0",
+  "name": "TestLM",
+  "title": "test Logical Model (Gatekeeper)",
+  "status": "active",
+  "description": "This profile defines how to represent Oxygen Saturation Profile observations in FHIR using a standard LOINC code and UCUM units of measure.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "Element",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Element",
+        "path": "Element"
+      }
+    ]
+  }
+}

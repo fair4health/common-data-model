@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../fhir-all-xsd/structuredefinition.xsd">
+	<id value="Medication"/>
+	<url value="http://hl7.eu/fhir/f4h/StructureDefinition/Medication"/>
+	<name value="Medication"/>
+	<title value="Opt-1: Medication"/>
+	<status value="draft"/>
+	<description value="Minimal set of Medication data used by the FAIR4Health project."/>
+	<kind value="logical"/>
+	<abstract value="true"/>
+	<type value="Medication"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+	<derivation value="specialization"/>
+	<differential>
+		<element id="Medication">
+			<path value="Medication"/>
+			<short value="Medication F4H Attributes"/>
+			<definition value="Non-exhaustive, collection of data used for administration, identification, assurance of identity and preferences within a Medication summary."/>
+			<min value="1"/>
+			<max value="*"/>
+		</element>
+		<element id="Medication.identifier">
+			<path value="Medication.identifier"/>
+			<short value="Medication identifier"/>
+			<definition value="Medication identifier"/>
+			<min value="1"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Medication.encounterID">
+			<path value="Medication.encounterID"/>
+			<short value="Encounter identifier"/>
+			<definition value="Encounter identifier"/>
+			<min value="1"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Medication.subjectID">
+			<path value="Medication.subjectID"/>
+			<short value="Patient identifier"/>
+			<definition value="Patient identifier"/>
+			<min value="1"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Medication.date">
+			<path value="Medication.date"/>
+			<short value="Medication date"/>
+			<definition value="Medication date"/>
+			<min value="1"/>
+			<max value="*"/>
+			<type>
+				<code value="date"/>
+			</type>
+		</element>
+		<element id="Medication.code">
+			<path value="Medication.code"/>
+			<short value="Medication code"/>
+			<definition value="Medication code"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="code"/>
+			</type>
+		</element>
+		<element id="Medication.codeDisplay">
+			<path value="Medication.codeDisplay"/>
+			<short value="Medication type (short description)"/>
+			<definition value="Medication type (short description)"/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>		
+	</differential>
+</StructureDefinition>

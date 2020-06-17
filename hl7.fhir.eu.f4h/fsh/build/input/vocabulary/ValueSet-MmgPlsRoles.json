@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MmgPlsRoles",
+  "id": "MmgPlsRoles",
+  "title": "MMG/PLS",
+  "description": "Medico Medicina Generale e Pediatra di Libera Scelta",
+  "version": "0.1.0",
+  "url": "http://hl7.it/fhir/ValueSet/MmgPlsRoles",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.it/fhir/CodeSystem/V3RoleCodeIT",
+        "concept": [
+          {
+            "code": "MMG",
+            "display": "medico di medicina generale"
+          },
+          {
+            "code": "PLS",
+            "display": "pediatra di libera scelta"
+          }
+        ]
+      }
+    ]
+  }
+}

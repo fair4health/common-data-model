@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../fhir-all-xsd/structuredefinition.xsd">
+	<id value="Encounter2"/>
+	<url value="http://hl7.eu/fhir/f4h/StructureDefinition/Encounter2"/>
+	<name value="Encounter2"/>
+	<title value="Opt-2: Encounter"/>
+	<status value="draft"/>
+	<description value="Minimal set of Encounter data used by the FAIR4Health project."/>
+	<kind value="logical"/>
+	<abstract value="true"/>
+	<type value="Encounter2"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+	<derivation value="specialization"/>
+	<differential>
+		<element id="Encounter2">
+			<path value="Encounter2"/>
+			<short value="Encounter2 F4H Attributes"/>
+			<definition value="Non-exhaustive, collection of data used for administration, identification, assurance of identity and preferences within a Encounter2 summary."/>
+			<min value="1"/>
+			<max value="*"/>
+		</element>
+		<element id="Encounter2.identifier">
+			<path value="Encounter2.identifier"/>
+			<short value="Encounter2 identifier"/>
+			<definition value="Note, Encounter2 Number is often used as a synonym, albeit that the identifier is not necessarily numeric; some jurisdictions use the Social Security Number as a healthcare identifier."/>
+			<min value="1"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Encounter2.subjectID">
+			<path value="Encounter2.subjectID"/>
+			<short value="Patient Identifier"/>
+			<definition value="DEFINITION."/>
+			<min value="1"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Encounter2.startDate">
+			<path value="Encounter2.startDate"/>
+			<short value="Encounter2 start date"/>
+			<definition value="Encounter2 start date"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="date"/>
+			</type>
+		</element>
+		<element id="Encounter2.endDate">
+			<path value="Encounter2.endDate"/>
+			<short value="Encounter2 end date"/>
+			<definition value="Encounter2 end date"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="date"/>
+			</type>
+		</element>	
+		
+		<element id="Encounter2.problems">
+			<path value="Encounter2.problems"/>
+			<short value="List of Problems"/>
+			<definition value="DEFINITION."/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="http://hl7.eu/fhir/f4h/StructureDefinition/Problem2"/>
+			</type>
+		</element>
+		<element id="Encounter2.medications">
+			<path value="Encounter2.medications"/>
+			<short value="List of Medications"/>
+			<definition value="DEFINITION."/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="http://hl7.eu/fhir/f4h/StructureDefinition/Medication2"/>
+			</type>
+		</element>
+		<element id="Encounter2.observations">
+			<path value="Encounter2.observations"/>
+			<short value="List of Observations"/>
+			<definition value="DEFINITION."/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="http://hl7.eu/fhir/f4h/StructureDefinition/Observation2"/>
+			</type>
+		</element>
+				<element id="Encounter2.labResults">
+			<path value="Encounter2.labResults"/>
+			<short value="List of Laboratory Results"/>
+			<definition value="DEFINITION."/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="http://hl7.eu/fhir/f4h/StructureDefinition/LabResult2"/>
+			</type>
+		</element>
+
+		
+	</differential>
+</StructureDefinition>

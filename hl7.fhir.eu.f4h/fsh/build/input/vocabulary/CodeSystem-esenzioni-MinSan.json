@@ -1,0 +1,2581 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "EsenzioniIT",
+  "id": "esenzioni-MinSan",
+  "title": "Codici Esenzioni Ministero della Salute",
+  "description": "Codici Esenzioni Ministero della Salute. NOTA BENE: QUESTO è SOLO UN ESTRATTO",
+  "version": "0.1.0",
+  "url": "http://hl7.it/fhir/CodeSystem/esenzioni-MinSan",
+  "concept": [
+    {
+      "code": "B01",
+      "display": "B01 Prestazioni soggetti a rischio infezioni HIV"
+    },
+    {
+      "code": "C01",
+      "display": "C01 Invalidi civili al 100%"
+    },
+    {
+      "code": "C02",
+      "display": "C02 Invalidità civile ( assegno accomp.)"
+    },
+    {
+      "code": "C03",
+      "display": "C03 Invalidità civile superiore a due terzi"
+    },
+    {
+      "code": "C04",
+      "display": "C04 Invalidi civili < 18 anni con ind.frequenza"
+    },
+    {
+      "code": "C05",
+      "display": "C05 Cecita' assoluta"
+    },
+    {
+      "code": "C06",
+      "display": "C06 Cecita' o sordita' e mutismo"
+    },
+    {
+      "code": "C07",
+      "display": "C07 Prestazioni richieste in sede di verifica invalidità civile"
+    },
+    {
+      "code": "D01B",
+      "display": "D01B Screening colon-retto per la classe di familiarità B"
+    },
+    {
+      "code": "D01C",
+      "display": "D01C Screening colon-retto per la classe di familiarità C"
+    },
+    {
+      "code": "D01",
+      "display": "D01-Prestazioni diagnostiche nell'ambito di campagne di screening autorizzate dalla Regione"
+    },
+    {
+      "code": "D02",
+      "display": "D02 Screening spontaneo cervice uterina normativa nazionale 25-65 anni"
+    },
+    {
+      "code": "D03",
+      "display": "D03 Screening spontaneo mammella normativa nazionale 45-49 anni"
+    },
+    {
+      "code": "D04",
+      "display": "D04 Screening spontaneo colon-retto normativa nazionale >= 45 anni"
+    },
+    {
+      "code": "D05",
+      "display": "D05 Screening spontaneo mammella normativa nazionale 45-49 anni 2° livello"
+    },
+    {
+      "code": "DR1060",
+      "display": "Età <=6 FVG - DGR1060"
+    },
+    {
+      "code": "E01",
+      "display": "E01 Eta' < 6 o > 65 con limite reddito familiare"
+    },
+    {
+      "code": "E02",
+      "display": "E02 Disoccupato con limite reddito familiare e familiari a carico"
+    },
+    {
+      "code": "E03",
+      "display": "E03 Titolare assegno sociale e familiari a carico"
+    },
+    {
+      "code": "E04",
+      "display": "E04 Eta' > 60 con pensione al minimo e familiari a carico"
+    },
+    {
+      "code": "F01",
+      "display": "F01 Prestazioni a favore di detenuti ed internati"
+    },
+    {
+      "code": "GM0",
+      "display": "GM0 Gravidanza e maternita' responsabile"
+    },
+    {
+      "code": "G01",
+      "display": "G01 Invalidità di guerra categoria da 1 a 5"
+    },
+    {
+      "code": "G02",
+      "display": "G02 Invalidità di guerra categoria da 6 a 8"
+    },
+    {
+      "code": "I01",
+      "display": "I01 Adozione-affidamento: prestazioni e certificazione per idoneità"
+    },
+    {
+      "code": "L01",
+      "display": "L01 Grandi invalidi del lavoro"
+    },
+    {
+      "code": "L02",
+      "display": "L02 Invalidità lavoro superiore a due terzi"
+    },
+    {
+      "code": "L03",
+      "display": "L03 Invalidità lavoro inferiore a due terzi"
+    },
+    {
+      "code": "L04",
+      "display": "L04 Infortunio sul lavoro o malattia prof."
+    },
+    {
+      "code": "M00",
+      "display": "M00 Gravidanza esami pre-concezionali"
+    },
+    {
+      "code": "M01",
+      "display": "M1 Gravidanza settimana 1"
+    },
+    {
+      "code": "M10",
+      "display": "M10 Gravidanza settimana 10"
+    },
+    {
+      "code": "M11",
+      "display": "M11 Gravidanza settimana 11"
+    },
+    {
+      "code": "M12",
+      "display": "M12 Gravidanza settimana 12"
+    },
+    {
+      "code": "M13",
+      "display": "M13 Gravidanza settimana 13"
+    },
+    {
+      "code": "M14",
+      "display": "M14 Gravidanza settimana 14"
+    },
+    {
+      "code": "M15",
+      "display": "M15 Gravidanza settimana 15"
+    },
+    {
+      "code": "M16",
+      "display": "M16 Gravidanza settimana 16"
+    },
+    {
+      "code": "M17",
+      "display": "M17 Gravidanza settimana 17"
+    },
+    {
+      "code": "M18",
+      "display": "M18 Gravidanza settimana 18"
+    },
+    {
+      "code": "M19",
+      "display": "M19 Gravidanza settimana 19"
+    },
+    {
+      "code": "M02",
+      "display": "M2 Gravidanza settimana 2"
+    },
+    {
+      "code": "M20",
+      "display": "M20 Gravidanza settimana 20"
+    },
+    {
+      "code": "M21",
+      "display": "M21 Gravidanza settimana 21"
+    },
+    {
+      "code": "M22",
+      "display": "M22 Gravidanza settimana 22"
+    },
+    {
+      "code": "M23",
+      "display": "M23 Gravidanza settimana 23"
+    },
+    {
+      "code": "M24",
+      "display": "M24 Gravidanza settimana 24"
+    },
+    {
+      "code": "M25",
+      "display": "M25 Gravidanza settimana 25"
+    },
+    {
+      "code": "M26",
+      "display": "M26 Gravidanza settimana 26"
+    },
+    {
+      "code": "M27",
+      "display": "M27 Gravidanza settimana 27"
+    },
+    {
+      "code": "M28",
+      "display": "M28 Gravidanza settimana 28"
+    },
+    {
+      "code": "M29",
+      "display": "M29 Gravidanza settimana 29"
+    },
+    {
+      "code": "M03",
+      "display": "M3 Gravidanza settimana 3"
+    },
+    {
+      "code": "M30",
+      "display": "M30 Gravidanza settimana 30"
+    },
+    {
+      "code": "M31",
+      "display": "M31 Gravidanza settimana 31"
+    },
+    {
+      "code": "M32",
+      "display": "M32 Gravidanza settimana 32"
+    },
+    {
+      "code": "M33",
+      "display": "M33 Gravidanza settimana 33"
+    },
+    {
+      "code": "M34",
+      "display": "M34 Gravidanza settimana 34"
+    },
+    {
+      "code": "M35",
+      "display": "M35 Gravidanza settimana 35"
+    },
+    {
+      "code": "M36",
+      "display": "M36 Gravidanza settimana 36"
+    },
+    {
+      "code": "M37",
+      "display": "M37 Gravidanza settimana 37"
+    },
+    {
+      "code": "M38",
+      "display": "M38 Gravidanza settimana 38"
+    },
+    {
+      "code": "M39",
+      "display": "M39 Gravidanza settimana 39"
+    },
+    {
+      "code": "M04",
+      "display": "M4 Gravidanza settimana 4"
+    },
+    {
+      "code": "M40",
+      "display": "M40 Gravidanza settimana 40"
+    },
+    {
+      "code": "M41",
+      "display": "M41 Gravidanza settimane dalla 41"
+    },
+    {
+      "code": "M05",
+      "display": "M5 Gravidanza settimana 5"
+    },
+    {
+      "code": "M50",
+      "display": "M50 Gravidanza a rischio"
+    },
+    {
+      "code": "M52",
+      "display": "M52 Ulteriori prestazioni in gravidanza a personale navigante"
+    },
+    {
+      "code": "M06",
+      "display": "M6 Gravidanza settimana 6"
+    },
+    {
+      "code": "M07",
+      "display": "M7 Gravidanza settimana 7"
+    },
+    {
+      "code": "M08",
+      "display": "M8 Gravidanza settimana 8"
+    },
+    {
+      "code": "M09",
+      "display": "M9 Gravidanza settimana 9"
+    },
+    {
+      "code": "M99",
+      "display": "M99 Gravidanza e maternita' responsabile"
+    },
+    {
+      "code": "N01",
+      "display": "N01 Danneggiati da vaccinazioni obbligatorie trasfusioni emoderivati"
+    },
+    {
+      "code": "PML",
+      "display": "PML Attività medico legale per naviganti"
+    },
+    {
+      "code": "P01",
+      "display": "P01 Prestazioni finalizzate alla tutela della salute collettiva"
+    },
+    {
+      "code": "P02",
+      "display": "P02 Prestazioni avviamento al lavoro per obblighi di legge"
+    },
+    {
+      "code": "P03",
+      "display": "P03 Prestazioni correlate vaccinazioni obbligatorie o raccomandate"
+    },
+    {
+      "code": "P08",
+      "display": "P08 Immunodeficienze congenite"
+    },
+    {
+      "code": "P09",
+      "display": "P09 Pemfigo e pemfigoidi"
+    },
+    {
+      "code": "P11",
+      "display": "P11 Emoglobinopatie, altre anemie congenite"
+    },
+    {
+      "code": "P21/3",
+      "display": "P21/3 Endocrinopatie congenite"
+    },
+    {
+      "code": "P25",
+      "display": "P25 Spasticita' da cerebropatia"
+    },
+    {
+      "code": "P36",
+      "display": "P36 Donatori di sangue"
+    },
+    {
+      "code": "P37",
+      "display": "P37 Donatori di organo/midollo emopoietico"
+    },
+    {
+      "code": "P42",
+      "display": "P42 Invalidità vittime del terrorismo"
+    },
+    {
+      "code": "P43",
+      "display": "P43 Ipercolesterolemia familiare"
+    },
+    {
+      "code": "P47",
+      "display": "P47 Iperkaliemia"
+    },
+    {
+      "code": "P48",
+      "display": "P48 Emocromatosi siderosi talassemia"
+    },
+    {
+      "code": "RA0010",
+      "display": "RA0010-Malattia di hansen"
+    },
+    {
+      "code": "RA0020",
+      "display": "RA0020-Malattia di whipple"
+    },
+    {
+      "code": "RA0030",
+      "display": "RA0030-Malattia di lyme"
+    },
+    {
+      "code": "RBG010",
+      "display": "RBG010-Neurofibromatosi"
+    },
+    {
+      "code": "RBG020",
+      "display": "RBG020-Complesso Carney"
+    },
+    {
+      "code": "RBG021",
+      "display": "RBG021-Cancro non poliposico ereditario del colon"
+    },
+    {
+      "code": "RB0010",
+      "display": "RB0010-Tumore di wilnis"
+    },
+    {
+      "code": "RB0020",
+      "display": "RB0020-Retinoblastoma"
+    },
+    {
+      "code": "RB0030",
+      "display": "RB0030-Malattia di cronkhite-canada"
+    },
+    {
+      "code": "RB0040",
+      "display": "RB0040-Sindrome di gardner"
+    },
+    {
+      "code": "RB0050",
+      "display": "RB0050-Poliposi familiare"
+    },
+    {
+      "code": "RB0060",
+      "display": "RB0060-Linfoangioleiomiomatosi"
+    },
+    {
+      "code": "RB0070",
+      "display": "RB0070-Sindrome del nevo basocellulare"
+    },
+    {
+      "code": "RB0071",
+      "display": "RB0071-Melanoma cutaneo familiare e/o multiplo"
+    },
+    {
+      "code": "RCG010",
+      "display": "RCG010-Iperaldosteronismi primitivi"
+    },
+    {
+      "code": "RCG020",
+      "display": "RCG020-Sindromi adrenogenitali congenite"
+    },
+    {
+      "code": "RCG030",
+      "display": "RCG030-Poliendocrinopatie autoimmuni"
+    },
+    {
+      "code": "RCG031",
+      "display": "RCG031-Sindromi da resistenza all'ormone della crescita"
+    },
+    {
+      "code": "RCG040",
+      "display": "RCG040-Disturbi metabolismo aminoacidi"
+    },
+    {
+      "code": "RCG050",
+      "display": "RCG050-Disturbi del ciclo dell'urea"
+    },
+    {
+      "code": "RCG060",
+      "display": "RCG060-Disturbi metabolismo carboidrati"
+    },
+    {
+      "code": "RCG061",
+      "display": "RCG061-Iperinsulinismi congeniti"
+    },
+    {
+      "code": "RCG070",
+      "display": "RCG070-Alter.cong.metab. lipoproteine"
+    },
+    {
+      "code": "RCG071",
+      "display": "RCG071-Difetti congeniti della sintesi del colesterolo"
+    },
+    {
+      "code": "RCG072",
+      "display": "RCG072-Difetti congeniti della sintesi degli acidi biliari"
+    },
+    {
+      "code": "RCG073",
+      "display": "RCG073-Difetti congeniti della sintesi dei fosfolipidi e dei glicosfingolipidi"
+    },
+    {
+      "code": "RCG074",
+      "display": "RCG074-Difetti congeniti della ossidazione e mitocondriale degli acidi grassi"
+    },
+    {
+      "code": "RCG075",
+      "display": "RCG075-Difetti congeniti della chetogenesi e della chetolisi"
+    },
+    {
+      "code": "RCG076",
+      "display": "RCG076-Difetti congeniti del metabolismo del piruvato e del ciclo degli acidi tricarbossilici"
+    },
+    {
+      "code": "RCG077",
+      "display": "RCG077-Difetti congeniti isolati di un complesso della fosforilazione ossidativa mitocondriale"
+    },
+    {
+      "code": "RCG078",
+      "display": "RCG078-Difetti congeniti della fosforilazione ossidativa mitocondriale da alterazioni del DNA mitocondriale"
+    },
+    {
+      "code": "RCG080",
+      "display": "RCG080-Disturbi da accumulo di lipidi"
+    },
+    {
+      "code": "RCG081",
+      "display": "RCG081-Difetti congeniti della fosforilazione ossidativa mitocondriale da alterazioni del DNA nucleare"
+    },
+    {
+      "code": "RCG082",
+      "display": "RCG082-Sindromi da deficit congenito di creatina"
+    },
+    {
+      "code": "RCG083",
+      "display": "RCG083-Altri difetti congeniti del metabolismo energetico mitocondriale"
+    },
+    {
+      "code": "RCG084",
+      "display": "RCG084-Malattie perossisomiali"
+    },
+    {
+      "code": "RCG085",
+      "display": "RCG085-Difetti congeniti del metabolismo dei neurotrasmettitori e dei piccoli peptidi"
+    },
+    {
+      "code": "RCG090",
+      "display": "RCG090-Mucolipidosi"
+    },
+    {
+      "code": "RCG091",
+      "display": "RCG091-Oligosaccaridosi"
+    },
+    {
+      "code": "RCG092",
+      "display": "RCG092-Difetti congeniti responsivi alla biotina"
+    },
+    {
+      "code": "RCG093",
+      "display": "RCG093-Difetti congeniti del metabolismo e del trasporto della cobalamina e del folato"
+    },
+    {
+      "code": "RCG094",
+      "display": "RCG094-Difetti congeniti del metabolismo e del trasporto della Vitamina D"
+    },
+    {
+      "code": "RCG095",
+      "display": "RCG095-Altri difetti congeniti del metabolismo e del trasporto di Vitamine E cofattori non proteici"
+    },
+    {
+      "code": "RCG100",
+      "display": "RCG100-Alt.met. del ferro"
+    },
+    {
+      "code": "RCG101",
+      "display": "RCG101-Difetti congeniti del metabolismo e del trasporto dello zinco"
+    },
+    {
+      "code": "RCG102",
+      "display": "RCG102-Difetti congeniti del metabolismo del rame"
+    },
+    {
+      "code": "RCG103",
+      "display": "RCG103-Altri difetti congeniti del metabolismo e del trasporto di metalli"
+    },
+    {
+      "code": "RCG110",
+      "display": "RCG110-Porfirie"
+    },
+    {
+      "code": "RCG120",
+      "display": "RCG120-Dis.metab. delle purine e pirimidine"
+    },
+    {
+      "code": "RCG130",
+      "display": "RCG130-Amiliodosi primarie e familiari"
+    },
+    {
+      "code": "RCG140",
+      "display": "RCG140-Mucopolisaccaridosi"
+    },
+    {
+      "code": "RCG150",
+      "display": "RCG150-Istiocitosi croniche"
+    },
+    {
+      "code": "RCG160",
+      "display": "RCG160-Immunodeficenze primarie"
+    },
+    {
+      "code": "RCG161",
+      "display": "RCG161-Sindromi autoinfiammatorie ereditarie/familiari"
+    },
+    {
+      "code": "RCG162",
+      "display": "RCG162-Sindromi da neoplasie endocrine multiple"
+    },
+    {
+      "code": "RCG180",
+      "display": "RCG180-Altre malattie da accumulo lisosomiale"
+    },
+    {
+      "code": "RCG190",
+      "display": "RCG190-Difetti congeniti della glicosilazione proteica (CDGS)"
+    },
+    {
+      "code": "RC0010",
+      "display": "RC0010-Deficienza di acth"
+    },
+    {
+      "code": "RC0020",
+      "display": "RC0020-Sindrome di kallmann"
+    },
+    {
+      "code": "RC0021",
+      "display": "RC0021-Deficit congenito isolato di GH"
+    },
+    {
+      "code": "RC0022",
+      "display": "RC0022-Ipogonadismo ipogonadrotopocongenito"
+    },
+    {
+      "code": "RC0030",
+      "display": "RC0030-Sindrome di reifenstein"
+    },
+    {
+      "code": "RC0040",
+      "display": "RC0040-Puberta' precoce idiopatica"
+    },
+    {
+      "code": "RC0050",
+      "display": "RC0050-Leprecaunismo"
+    },
+    {
+      "code": "RC0060",
+      "display": "RC0060-Sindrome di werner"
+    },
+    {
+      "code": "RC0070",
+      "display": "RC0070-Deficienza congenita di zinco"
+    },
+    {
+      "code": "RC0080",
+      "display": "RC0080-Lipodistrofia totale"
+    },
+    {
+      "code": "RC0090",
+      "display": "RC0090-Malattia di dercum"
+    },
+    {
+      "code": "RC0100",
+      "display": "RC0100-Malattia di farmer"
+    },
+    {
+      "code": "RC0110",
+      "display": "RC0110-Crioglobulinemia mista 'essenziale'"
+    },
+    {
+      "code": "RC0120",
+      "display": "RC0120-Aceruloplasminemia congenita"
+    },
+    {
+      "code": "RC0130",
+      "display": "RC0130-Atransferrinemia congenita"
+    },
+    {
+      "code": "RC0140",
+      "display": "RC0140-Malattia di waldmann"
+    },
+    {
+      "code": "RC0150",
+      "display": "RC0150-Malattia di wilson"
+    },
+    {
+      "code": "RC0160",
+      "display": "RC0160-Ipofosfatasia"
+    },
+    {
+      "code": "RC0170",
+      "display": "RC0170-Rachitismo ipofosfatemico vitamina d resist"
+    },
+    {
+      "code": "RC0180",
+      "display": "RC0180-Sindrome di crigler-najjar"
+    },
+    {
+      "code": "RC0190",
+      "display": "RC0190-Angiodema ereditario"
+    },
+    {
+      "code": "RC0191",
+      "display": "RC0191-Angioedema acquisito da deficit di C1 inibitore"
+    },
+    {
+      "code": "RC0200",
+      "display": "RC0200-Carenza congenita di alfa1 antitripsina"
+    },
+    {
+      "code": "RC0210",
+      "display": "RC0210-Malattia di behcet"
+    },
+    {
+      "code": "RC0220",
+      "display": "RC0220-Sindrome da anticorpi antifosolipidi"
+    },
+    {
+      "code": "RC0230",
+      "display": "RC0230-Calcinosi tumorale"
+    },
+    {
+      "code": "RC0280",
+      "display": "RC0280-Refetoff, sindrome di"
+    },
+    {
+      "code": "RC0290",
+      "display": "RC0290-Schnitzler, sindrome di"
+    },
+    {
+      "code": "RC0300",
+      "display": "RC0300-Kenny-Caffey, sindrome di"
+    },
+    {
+      "code": "RDG010",
+      "display": "RDG010-Anemie ereditarie"
+    },
+    {
+      "code": "RDG020",
+      "display": "RDG020-Difetti ereditari della coagulazione"
+    },
+    {
+      "code": "RDG030",
+      "display": "RDG030-Piastrinopatie ereditarie"
+    },
+    {
+      "code": "RDG031",
+      "display": "RDG031-Piastrinopatie autoimmuni primarie croniche"
+    },
+    {
+      "code": "RDG040",
+      "display": "RDG040-Trombocitopenie primarie ereditarie"
+    },
+    {
+      "code": "RDG050",
+      "display": "RDG050-Sindromi mielodisplastiche"
+    },
+    {
+      "code": "RDG051",
+      "display": "RDG051-Neutropenie congenite"
+    },
+    {
+      "code": "RD0010",
+      "display": "RD0010-Sindrome emolitico uremica"
+    },
+    {
+      "code": "RD0020",
+      "display": "RD0020-Emoglobinuria parossistica notturna"
+    },
+    {
+      "code": "RD0030",
+      "display": "RD0030-Porpora di shonlein-henoch"
+    },
+    {
+      "code": "RD0040",
+      "display": "RD0040-Neutropenia ciclica"
+    },
+    {
+      "code": "RD0050",
+      "display": "RD0050-Malattia granulomatosa cronica"
+    },
+    {
+      "code": "RD0060",
+      "display": "RD0060-Chediak-higashi malattia di"
+    },
+    {
+      "code": "RD0070",
+      "display": "RD0070-Anemie aplastiche acquisite"
+    },
+    {
+      "code": "RD0080",
+      "display": "RD0080-Shwachman-Diamond, sindrome di"
+    },
+    {
+      "code": "RD0081",
+      "display": "RD0081-Mastocistosi sistemica"
+    },
+    {
+      "code": "RFG010",
+      "display": "RFG010-Leucodistrofie"
+    },
+    {
+      "code": "RFG020",
+      "display": "RFG020-Ceroido-lipofuscinosi"
+    },
+    {
+      "code": "RFG030",
+      "display": "RFG030-Gangliosidosi"
+    },
+    {
+      "code": "RFG040",
+      "display": "RFG040-Malattie spinocerebellari"
+    },
+    {
+      "code": "RFG041",
+      "display": "RFG041-Neurodegenerazione con accumulo cerebrale di ferro"
+    },
+    {
+      "code": "RFG050",
+      "display": "RFG050-Atrofie muscolari spinali"
+    },
+    {
+      "code": "RFG060",
+      "display": "RFG060-Neuropatie ereditarie"
+    },
+    {
+      "code": "RFG070",
+      "display": "RFG070-Miopatie congenite ereditarie"
+    },
+    {
+      "code": "RFG080",
+      "display": "RFG080-Distrofie muscolari"
+    },
+    {
+      "code": "RFG090",
+      "display": "RFG090-Distrofie miotoniche"
+    },
+    {
+      "code": "RFG100",
+      "display": "RFG100-Paralisi normokaliemiche,ipo,iperkaliemiche"
+    },
+    {
+      "code": "RFG101",
+      "display": "RFG101-Sindromi miasteniche congenite e dismmuni"
+    },
+    {
+      "code": "RFG110",
+      "display": "RFG110-Distrofie retiniche ereditarie"
+    },
+    {
+      "code": "RFG120",
+      "display": "RFG120-Distrofie ereditarie della coroide"
+    },
+    {
+      "code": "RFG130",
+      "display": "RFG130-Degenerazioni della cornea"
+    },
+    {
+      "code": "RFG140",
+      "display": "RFG140-Distrofie ereditarie della cornea"
+    },
+    {
+      "code": "RFG150",
+      "display": "RFG150-Anoftalmia/microftalmia isolate o sindromiche"
+    },
+    {
+      "code": "RFG160",
+      "display": "RFG160-Distonie primarie"
+    },
+    {
+      "code": "RF0010",
+      "display": "RF0010-Malattia di alpers"
+    },
+    {
+      "code": "RF0020",
+      "display": "RF0020-Sindrome di kearns-sayre"
+    },
+    {
+      "code": "RF0030",
+      "display": "RF0030-Malattia di leigh"
+    },
+    {
+      "code": "RF0040",
+      "display": "RF0040-Sindrome di rett"
+    },
+    {
+      "code": "RF0050",
+      "display": "RF0050-Atrofia dentato rubropallidoluysiana"
+    },
+    {
+      "code": "RF0060",
+      "display": "RF0060-Epilessia mioclonica progressiva"
+    },
+    {
+      "code": "RF0061",
+      "display": "RF0061-Dravet, sindrome di"
+    },
+    {
+      "code": "RF0070",
+      "display": "RF0070-Mioclono essenziale ereditario"
+    },
+    {
+      "code": "RF0080",
+      "display": "RF0080-Corea di huntington"
+    },
+    {
+      "code": "RF0081",
+      "display": "RF0081-Atrofia multisistemica"
+    },
+    {
+      "code": "RF0090",
+      "display": "RF0090-Distonia di torsione idiopatica"
+    },
+    {
+      "code": "RF0100",
+      "display": "RF0100-Sclerosi laterale amiotrofica"
+    },
+    {
+      "code": "RF0110",
+      "display": "RF0110-Sclerosi laterale primaria"
+    },
+    {
+      "code": "RF0111",
+      "display": "RF0111-Schilder, malattia di"
+    },
+    {
+      "code": "RF0120",
+      "display": "RF0120-Adrenoleucodistrofia"
+    },
+    {
+      "code": "RF0130",
+      "display": "RF0130-Sindrome di lennox gastaut"
+    },
+    {
+      "code": "RF0140",
+      "display": "RF0140-Sindrome di west"
+    },
+    {
+      "code": "RF0150",
+      "display": "RF0150-Narcolessia"
+    },
+    {
+      "code": "RF0160",
+      "display": "RF0160-Sindrome di melkersson-rosenthal"
+    },
+    {
+      "code": "RF0170",
+      "display": "RF0170-Dindrome steele-richardson-olszewski"
+    },
+    {
+      "code": "RF0180",
+      "display": "RF0180-Polineuropatia cronica inf. demielinizzante"
+    },
+    {
+      "code": "RF0181",
+      "display": "RF0181-neuropatia motoria multifocale"
+    },
+    {
+      "code": "RF0182",
+      "display": "RF0182-Lewis Sumner, sindrome di"
+    },
+    {
+      "code": "RF0183",
+      "display": "RF0183-Guillain-Barrè, sindrome di"
+    },
+    {
+      "code": "RF0190",
+      "display": "RF0190-Sindrome di eaton-lambert"
+    },
+    {
+      "code": "RF0200",
+      "display": "RF0200-Vitreoretinopatia essudativa familiare"
+    },
+    {
+      "code": "RF0201",
+      "display": "RF0201-Coats, malattia di"
+    },
+    {
+      "code": "RF0210",
+      "display": "RF0210-Malattia di eales"
+    },
+    {
+      "code": "RF0220",
+      "display": "RF0220-Sindrome di behr"
+    },
+    {
+      "code": "RF0230",
+      "display": "RF0230-Ciclite eterocromica di fuch"
+    },
+    {
+      "code": "RF0240",
+      "display": "RF0240-Atrofia essenziale dell'iride"
+    },
+    {
+      "code": "RF0250",
+      "display": "RF0250-Emeralopia congenita"
+    },
+    {
+      "code": "RF0260",
+      "display": "RF0260-Sindrome di oguchi"
+    },
+    {
+      "code": "RF0270",
+      "display": "RF0270-Sindrome di cogan"
+    },
+    {
+      "code": "RF0280",
+      "display": "RF0280-Cheratocono"
+    },
+    {
+      "code": "RF0290",
+      "display": "RF0290-Congiuntivite lignea"
+    },
+    {
+      "code": "RF0300",
+      "display": "RF0300-Atrofia ottica di leber"
+    },
+    {
+      "code": "RF0310",
+      "display": "RF0310-Cadasil"
+    },
+    {
+      "code": "RF0320",
+      "display": "RF0320-Coroidite multifocale"
+    },
+    {
+      "code": "RF0330",
+      "display": "RF0330-Coroidite serpiginosa"
+    },
+    {
+      "code": "RF0350",
+      "display": "RF0350-Emicrania emiplegica familiare"
+    },
+    {
+      "code": "RF0360",
+      "display": "RF0360-Emiplegia alternante"
+    },
+    {
+      "code": "RF0370",
+      "display": "RF0370-Fahr, malattia di"
+    },
+    {
+      "code": "RF0380",
+      "display": "RF0380-malattia da inclusioni intranucleari neuronali"
+    },
+    {
+      "code": "RF0390",
+      "display": "RF0390-Paralisi bulbare progressiva con sordità neurosensoriale"
+    },
+    {
+      "code": "RF0400",
+      "display": "RF0400-pendred, sindrom di"
+    },
+    {
+      "code": "RF0410",
+      "display": "RF0410-Siringomielia-Siringobulbia"
+    },
+    {
+      "code": "RF0411",
+      "display": "RF0411-Sindrome della persona rigida"
+    },
+    {
+      "code": "RGG010",
+      "display": "RGG010-Microangiopatie trombotiche"
+    },
+    {
+      "code": "RGG020",
+      "display": "RGG020-Linfedemi primari cronici"
+    },
+    {
+      "code": "RG0010",
+      "display": "RG0010-Endocardite reumatica"
+    },
+    {
+      "code": "RG0020",
+      "display": "RG0020-Poliangioite microscopica"
+    },
+    {
+      "code": "RG0030",
+      "display": "RG0030-Poliarterite nodosa"
+    },
+    {
+      "code": "RG0040",
+      "display": "RG0040-Malattia di kawasaki"
+    },
+    {
+      "code": "RG0050",
+      "display": "RG0050-Sindrome di churg strauss"
+    },
+    {
+      "code": "RG0060",
+      "display": "RG0060-Sindrome di goodpasture"
+    },
+    {
+      "code": "RG0070",
+      "display": "RG0070-Granulomatosi di wegener"
+    },
+    {
+      "code": "RG0080",
+      "display": "RG0080-Arterite temporale o di horton"
+    },
+    {
+      "code": "RG0090",
+      "display": "RG0090-Arterite di takayasu"
+    },
+    {
+      "code": "RG0100",
+      "display": "RG0100-Teleangectasia emorragica ereditaria"
+    },
+    {
+      "code": "RG0110",
+      "display": "RG0110-Sindrome di budd-chiari"
+    },
+    {
+      "code": "RG0120",
+      "display": "RG0120-Ipertensione polmonare arteriosa idiopatica"
+    },
+    {
+      "code": "RHG010",
+      "display": "RHG010-Malattie interstiziali polmonari primitive"
+    },
+    {
+      "code": "RHG011",
+      "display": "RHG011-Sindromi gravi ed invalidanti con ipoventilazione centrale congenita"
+    },
+    {
+      "code": "RH0011",
+      "display": "RH0011-Sarcoidosi"
+    },
+    {
+      "code": "RH0020",
+      "display": "RH0020-Emosiderosi polmonare idiopatica"
+    },
+    {
+      "code": "RH0021",
+      "display": "RH0021-Proteinosi alveolare polmonare idiopatica"
+    },
+    {
+      "code": "RH0022",
+      "display": "RH0022-Proteinosi alveolare polmonare congenita"
+    },
+    {
+      "code": "RIG010",
+      "display": "RIG010-Colestasi intraepatiche progressive familiari"
+    },
+    {
+      "code": "RIG020",
+      "display": "RIG020-Difetti congeniti gravi ed invalidanti del trasporto intestinale"
+    },
+    {
+      "code": "RI0010",
+      "display": "RI0010-Acalasia"
+    },
+    {
+      "code": "RI0020",
+      "display": "RI0020-Gastrite ipertrofica gigante"
+    },
+    {
+      "code": "RI0030",
+      "display": "RI0030-Gastroenterite eosinofila"
+    },
+    {
+      "code": "RI0040",
+      "display": "RI0040-Sindrome da pseudo-ostruzione intestinale"
+    },
+    {
+      "code": "RI0050",
+      "display": "RI0050-Colangite primitiva sclerosante"
+    },
+    {
+      "code": "RI0060",
+      "display": "RI0060-Sprue celiaca"
+    },
+    {
+      "code": "RI0070",
+      "display": "RI0070-Malattia da inclusione dei microvilli"
+    },
+    {
+      "code": "RI0080",
+      "display": "RI0080-Linfangectasia intestinale"
+    },
+    {
+      "code": "RJG010",
+      "display": "RJG010-Tubolopatie primitive"
+    },
+    {
+      "code": "RJG020",
+      "display": "RJG020-Glomerulopatie primitive"
+    },
+    {
+      "code": "RJ0010",
+      "display": "RJ0010-Diabete insipido nefrogenico"
+    },
+    {
+      "code": "RJ0020",
+      "display": "RJ0020-Fibrosi retroperitoneale"
+    },
+    {
+      "code": "RJ0030",
+      "display": "RJ0030-Cistite interstiziale"
+    },
+    {
+      "code": "RL0010",
+      "display": "RL0010-Eritrocheratolisi hiemalis"
+    },
+    {
+      "code": "RL0020",
+      "display": "RL0020-Dermatite erpetiforme"
+    },
+    {
+      "code": "RL0030",
+      "display": "RL0030-Pemfigo"
+    },
+    {
+      "code": "RL0040",
+      "display": "RL0040-Pemfigoide bolloso"
+    },
+    {
+      "code": "RL0050",
+      "display": "RL0050-Pemfigoide benigno delle mucose"
+    },
+    {
+      "code": "RL0060",
+      "display": "RL0060-Lichen sclerosus et atrophicus"
+    },
+    {
+      "code": "RL0070",
+      "display": "RL0070-Sindrome Michelin Tire Baby"
+    },
+    {
+      "code": "RL0080",
+      "display": "RL0080-Sclerosi cutanea diffusa ad alta gravità clinica"
+    },
+    {
+      "code": "RL0090",
+      "display": "RL0090-Pioderma gangrenoso cronico"
+    },
+    {
+      "code": "RMG010",
+      "display": "RMG010-Connettivite indifferenziata"
+    },
+    {
+      "code": "RM0010",
+      "display": "RM0010-Dermatomiosite"
+    },
+    {
+      "code": "RM0020",
+      "display": "RM0020-Polimiosite"
+    },
+    {
+      "code": "RM0021",
+      "display": "RM0021-Sindrome da anticorpi antisintetasi"
+    },
+    {
+      "code": "RM0030",
+      "display": "RM0030-Connettivite mista"
+    },
+    {
+      "code": "RM0040",
+      "display": "RM0040-Fascite eosinofila"
+    },
+    {
+      "code": "RM0050",
+      "display": "RM0050-Fascite diffusa"
+    },
+    {
+      "code": "RM0060",
+      "display": "RM0060-Polcondrite"
+    },
+    {
+      "code": "RM0070",
+      "display": "RM0070-Angiomatosi cistica diffusa dell'osso"
+    },
+    {
+      "code": "RM0080",
+      "display": "RM0080-Eteroplasia ossea progressiva"
+    },
+    {
+      "code": "RM0090",
+      "display": "RM0090-Fibrodisplasia ossificante progressiva"
+    },
+    {
+      "code": "RM0100",
+      "display": "RM0100-Meloreostosi"
+    },
+    {
+      "code": "RM0110",
+      "display": "RM0110-Miosite a corpi inclusi"
+    },
+    {
+      "code": "RM0111",
+      "display": "RM0111-Miosite eosinofila idiopatica"
+    },
+    {
+      "code": "RM0120",
+      "display": "RM0120-Sclerosi sistemica progressiva"
+    },
+    {
+      "code": "RM0121",
+      "display": "RM0121-Sindrome Sapho"
+    },
+    {
+      "code": "RNG010",
+      "display": "RNG010-Pseudoermafroditismi"
+    },
+    {
+      "code": "RNG011",
+      "display": "RNG011-Altre sindromi malformative congenite gravi ed invalidanti con prevalente alterazione del sistema nervoso"
+    },
+    {
+      "code": "RNG020",
+      "display": "RNG020-Artrogriposi multiple congenite"
+    },
+    {
+      "code": "RNG030",
+      "display": "RNG030-Acrocefalosindattilia"
+    },
+    {
+      "code": "RNG040",
+      "display": "RNG040-Anomalie congenite del cranio/faccia"
+    },
+    {
+      "code": "RNG050",
+      "display": "RNG050-Condrodistrofie congenite"
+    },
+    {
+      "code": "RNG060",
+      "display": "RNG060-Osteodistrofie congenite"
+    },
+    {
+      "code": "RNG070",
+      "display": "RNG070-Ittiosi congenite"
+    },
+    {
+      "code": "RNG080",
+      "display": "RNG080-Sindromi da aneuploidia cromosomica"
+    },
+    {
+      "code": "RNG090",
+      "display": "RNG090-Sindromi duplicazione/defic. cromosomica"
+    },
+    {
+      "code": "RNG091",
+      "display": "RNG091-Sindromi malformative congenite con alterazione del tessuto connettivo come segno principale"
+    },
+    {
+      "code": "RNG092",
+      "display": "RNG092-Sindromi malformative congenite gravi ed invalidanti con bassa statura come segno principale"
+    },
+    {
+      "code": "RNG093",
+      "display": "RNG093-Sindromi malformative congenite gravi ed invalidanti caratterizzate da un accrescimento precoce eccessivo"
+    },
+    {
+      "code": "RNG094",
+      "display": "RNG094-Sindromi progeroidi"
+    },
+    {
+      "code": "RNG095",
+      "display": "RNG095-Sindromi di Waardenburg"
+    },
+    {
+      "code": "RNG100",
+      "display": "RNG100-Anomalie congenite multiple con ritardo men"
+    },
+    {
+      "code": "RNG101",
+      "display": "RNG101-Coloboma congenito oculare isolato o sindromico"
+    },
+    {
+      "code": "RNG110",
+      "display": "RNG110-Discinesie ciliari primarie"
+    },
+    {
+      "code": "RNG111",
+      "display": "RNG111-Altre sindromi malformative comgenite gravi ed invalidanti con prevalente interessamento dell'apparato visivo"
+    },
+    {
+      "code": "RNG121",
+      "display": "RNG121-Sindromi malformative congenite gravi ed invalidanti con alterazione della faccia come segno principale"
+    },
+    {
+      "code": "RNG130",
+      "display": "RNG130-Cheratodermie palmoplantari ereditarie"
+    },
+    {
+      "code": "RNG131",
+      "display": "RNG131-Altre sindromi malformative congenite gravi ed invalidanti con alterazione degli arti come segno principale"
+    },
+    {
+      "code": "RNG132",
+      "display": "RNG132-Altre malformazioni congenite gravi ed invalidanti della parete addominale"
+    },
+    {
+      "code": "RNG141",
+      "display": "RNG141-Sindromi malformative congenite gravi ed invalidanti del cuore e dei grandi vasi"
+    },
+    {
+      "code": "RNG142",
+      "display": "RNG142-Altre sindromi malformative congenite gravi ed invalidanti dei vasi periferici"
+    },
+    {
+      "code": "RNG150",
+      "display": "RNG150-Agenesia/Disgenesia del corpo calloso in forma isolata o sindromica"
+    },
+    {
+      "code": "RNG151",
+      "display": "RNG151-Sindromi con displasia ectodermica"
+    },
+    {
+      "code": "RNG200",
+      "display": "RNG200-Amartomatosi multiple"
+    },
+    {
+      "code": "RNG251",
+      "display": "RNG251-Difetti congeniti del tubo digerente: agenesia, atresie, fistole e duplicazioni"
+    },
+    {
+      "code": "RNG252",
+      "display": "RNG252-Altre malformazioni congenite gravi ed invalidanti dell'apparto digerente"
+    },
+    {
+      "code": "RNG261",
+      "display": "RNG261-Malattia renale cistica genetica"
+    },
+    {
+      "code": "RNG262",
+      "display": "RNG262-Difettti dell sviluppo sessuale con ambiguità dei genitali e/o discordanza cariotipo/sviluppo gonadico e/o fenoti"
+    },
+    {
+      "code": "RNG263",
+      "display": "RNG263-Altri difetti gravi ed invalidanti dello sviluppo sessuale con ambiguità  dei genitali e/o discordanza cariotipo/"
+    },
+    {
+      "code": "RNG264",
+      "display": "RNG264-Altre malformazioni congenite gravi ed invalidanti dell'apprato genito-urinario"
+    },
+    {
+      "code": "RNG271",
+      "display": "RNG271-Sindromi malformative congenite gravi ed invalidanti con disostosi come segno prevalente"
+    },
+    {
+      "code": "RN0010",
+      "display": "RN0010-Sindrome di arnold-chiari"
+    },
+    {
+      "code": "RN0020",
+      "display": "RN0020-Microcefalia"
+    },
+    {
+      "code": "RN0030",
+      "display": "RN0030-Agenesia cerebellare"
+    },
+    {
+      "code": "RN0040",
+      "display": "RN0040-Sindrome di joubert"
+    },
+    {
+      "code": "RN0050",
+      "display": "RN0050-Lissencefalia"
+    },
+    {
+      "code": "RN0060",
+      "display": "RN0060-Oloprosencefalia"
+    },
+    {
+      "code": "RN0070",
+      "display": "RN0070-Sindrome di chiray foix"
+    },
+    {
+      "code": "RN0080",
+      "display": "RN0080-Disautonomia familiare"
+    },
+    {
+      "code": "RN0090",
+      "display": "RN0090-Anomalia di axenfeld-rieger"
+    },
+    {
+      "code": "RN0100",
+      "display": "RN0100-Anomalid di peter"
+    },
+    {
+      "code": "RN0110",
+      "display": "RN0110-Aniridia"
+    },
+    {
+      "code": "RN0120",
+      "display": "RN0120-Coloboma congenito del disco ottico"
+    },
+    {
+      "code": "RN0130",
+      "display": "RN0130-Anomalia di morning glory"
+    },
+    {
+      "code": "RN0140",
+      "display": "RN0140-Persistenza della membrana pupillare"
+    },
+    {
+      "code": "RN0150",
+      "display": "RN0150-Blue rubber bleb nevus"
+    },
+    {
+      "code": "RN0160",
+      "display": "RN0160-Atresia esofagea-fistola tracheoesofagea"
+    },
+    {
+      "code": "RN0170",
+      "display": "RN0170-Atresia del digiuno"
+    },
+    {
+      "code": "RN0180",
+      "display": "RN0180-Atresia o stenosi duodenale"
+    },
+    {
+      "code": "RN0190",
+      "display": "RN0190-Ano imperforato"
+    },
+    {
+      "code": "RN0200",
+      "display": "RN0200-Malattia di hirschsprung"
+    },
+    {
+      "code": "RN0210",
+      "display": "RN0210-Atresia biliare"
+    },
+    {
+      "code": "RN0220",
+      "display": "RN0220-Malattia di caroli"
+    },
+    {
+      "code": "RN0230",
+      "display": "RN0230-Malattia del fegato policistico"
+    },
+    {
+      "code": "RN0240",
+      "display": "RN0240-Ermafroditismo vero"
+    },
+    {
+      "code": "RN0250",
+      "display": "RN0250-Rene con midollare a spugna"
+    },
+    {
+      "code": "RN0260",
+      "display": "RN0260-Focomelia"
+    },
+    {
+      "code": "RN0270",
+      "display": "RN0270-Deformita' di sprengel"
+    },
+    {
+      "code": "RN0280",
+      "display": "RN0280-Acrodisostosi"
+    },
+    {
+      "code": "RN0290",
+      "display": "RN0290-Camptodattilia familiare"
+    },
+    {
+      "code": "RN0300",
+      "display": "RN0300-Sindrome da regressione caudale"
+    },
+    {
+      "code": "RN0310",
+      "display": "RN0310-Sindrome di klippel-feil"
+    },
+    {
+      "code": "RN0320",
+      "display": "RN0320-Gastroschisi"
+    },
+    {
+      "code": "RN0321",
+      "display": "RN0321-Sindrome Prune Belly"
+    },
+    {
+      "code": "RN0322",
+      "display": "RN0322-Onfalocele"
+    },
+    {
+      "code": "RN0330",
+      "display": "RN0330-Sindrome di ehlers-danlos"
+    },
+    {
+      "code": "RN0340",
+      "display": "RN0340-Sindrome di adams-oliver"
+    },
+    {
+      "code": "RN0350",
+      "display": "RN0350-Sindrome di coffin-lowry"
+    },
+    {
+      "code": "RN0360",
+      "display": "RN0360-Sindrome di coffin-siris"
+    },
+    {
+      "code": "RN0370",
+      "display": "RN0370-Sindrome dyggve-melchior-clausen (dmc)"
+    },
+    {
+      "code": "RN0380",
+      "display": "RN0380-Sindrome di filippi"
+    },
+    {
+      "code": "RN0390",
+      "display": "RN0390-Sindrome di greig, cefalopolisindattilia"
+    },
+    {
+      "code": "RN0400",
+      "display": "RN0400-Sindrome di jackson-weiss"
+    },
+    {
+      "code": "RN0401",
+      "display": "RN0401-Cohen, sindrome di"
+    },
+    {
+      "code": "RN0410",
+      "display": "RN0410-Sindrome di jarcho-levin"
+    },
+    {
+      "code": "RN0420",
+      "display": "RN0420-Sindrome di pallister-w"
+    },
+    {
+      "code": "RN0430",
+      "display": "RN0430-Sindrome di poland"
+    },
+    {
+      "code": "RN0440",
+      "display": "RN0440-Sequenza sirenomelica"
+    },
+    {
+      "code": "RN0450",
+      "display": "RN0450-Sindrome cerebro-costo-mandibolare"
+    },
+    {
+      "code": "RN0460",
+      "display": "RN0460-Sindrome femoro-facciale"
+    },
+    {
+      "code": "RN0470",
+      "display": "RN0470-Sindrome oto-palato-digitale"
+    },
+    {
+      "code": "RN0480",
+      "display": "RN0480-Sindrome trisma pseudocamptodattilia"
+    },
+    {
+      "code": "RN0490",
+      "display": "RN0490-Sindrome di weaver"
+    },
+    {
+      "code": "RN0500",
+      "display": "RN0500-Cutis laxa"
+    },
+    {
+      "code": "RN0510",
+      "display": "RN0510-Incontinentia pigmenti"
+    },
+    {
+      "code": "RN0520",
+      "display": "RN0520-Xeroderma pigmentoso"
+    },
+    {
+      "code": "RN0530",
+      "display": "RN0530-Cheratosi follicolare acuminata"
+    },
+    {
+      "code": "RN0540",
+      "display": "RN0540-Cute marmorea teleangectasica congenita"
+    },
+    {
+      "code": "RN0550",
+      "display": "RN0550-Malattia di darier"
+    },
+    {
+      "code": "RN0560",
+      "display": "RN0560-Discheratosi congenita"
+    },
+    {
+      "code": "RN0570",
+      "display": "RN0570-Epidermolisi bollosa"
+    },
+    {
+      "code": "RN0580",
+      "display": "RN0580-Eritrocheratodermia simmetrica progressiva"
+    },
+    {
+      "code": "RN0590",
+      "display": "RN0590-Eritrocheratodermia variabile"
+    },
+    {
+      "code": "RN0600",
+      "display": "RN0600-Ipercheratosi epidermolitica"
+    },
+    {
+      "code": "RN0610",
+      "display": "RN0610-Ipoplasia focale dermica"
+    },
+    {
+      "code": "RN0620",
+      "display": "RN0620-Pachidermoperiostosi"
+    },
+    {
+      "code": "RN0630",
+      "display": "RN0630-Pseudoxantoma elastico"
+    },
+    {
+      "code": "RN0640",
+      "display": "RN0640-Aplasia congenita della cute"
+    },
+    {
+      "code": "RN0650",
+      "display": "RN0650-Sindrome di parry-romberg"
+    },
+    {
+      "code": "RN0660",
+      "display": "RN0660-Sindrome di down"
+    },
+    {
+      "code": "RN0670",
+      "display": "RN0670-Malattia del cri du chat"
+    },
+    {
+      "code": "RN0680",
+      "display": "RN0680-Sindrome di turner"
+    },
+    {
+      "code": "RN0690",
+      "display": "RN0690-Sindrome di klinefelter"
+    },
+    {
+      "code": "RN0700",
+      "display": "RN0700-Sindrome di wolf-hirschhorn"
+    },
+    {
+      "code": "RN0710",
+      "display": "RN0710-Sindrome di melas"
+    },
+    {
+      "code": "RN0720",
+      "display": "RN0720-Sindrome di merrf"
+    },
+    {
+      "code": "RN0730",
+      "display": "RN0730-Sindrome di short"
+    },
+    {
+      "code": "RN0740",
+      "display": "RN0740-Sindrome di ivemark"
+    },
+    {
+      "code": "RN0750",
+      "display": "RN0750-Sclerosi tuberosa"
+    },
+    {
+      "code": "RN0760",
+      "display": "RN0760-Sindrome di peutz-jeghers"
+    },
+    {
+      "code": "RN0770",
+      "display": "RN0770-Sindrome di sturge-weber"
+    },
+    {
+      "code": "RN0780",
+      "display": "RN0780-Sindrome di von hippel-lindau"
+    },
+    {
+      "code": "RN0790",
+      "display": "RN0790-Sindrome di aarskog"
+    },
+    {
+      "code": "RN0800",
+      "display": "RN0800-Sindrome di antley-bixler"
+    },
+    {
+      "code": "RN0810",
+      "display": "RN0810-Sindrome di baller-gerold"
+    },
+    {
+      "code": "RN0820",
+      "display": "RN0820-Sindrome di beckwith-wiedemann"
+    },
+    {
+      "code": "RN0830",
+      "display": "RN0830-Sindrome di bloom"
+    },
+    {
+      "code": "RN0840",
+      "display": "RN0840-Sindrome di borjeson"
+    },
+    {
+      "code": "RN0850",
+      "display": "RN0850-Charge associazione"
+    },
+    {
+      "code": "RN0860",
+      "display": "RN0860-Sindrome di de morsier"
+    },
+    {
+      "code": "RN0870",
+      "display": "RN0870-Sindrome di dubowitz"
+    },
+    {
+      "code": "RN0880",
+      "display": "RN0880-Sindrome eec"
+    },
+    {
+      "code": "RN0890",
+      "display": "RN0890-Sindrome di freeman-sheldon"
+    },
+    {
+      "code": "RN0900",
+      "display": "RN0900-Sindrome di fryns"
+    },
+    {
+      "code": "RN0910",
+      "display": "RN0910-Sindrome di goldenhar"
+    },
+    {
+      "code": "RN0920",
+      "display": "RN0920-Sindrome di hermansky-pudlak"
+    },
+    {
+      "code": "RN0930",
+      "display": "RN0930-Sindrome di holt-oram"
+    },
+    {
+      "code": "RN0940",
+      "display": "RN0940-Kabuki sindrome della maschera"
+    },
+    {
+      "code": "RN0950",
+      "display": "RN0950-Sindrome di kartagener"
+    },
+    {
+      "code": "RN0960",
+      "display": "RN0960-Sindrome di maffucci"
+    },
+    {
+      "code": "RN0970",
+      "display": "RN0970-Sindrome di marshall"
+    },
+    {
+      "code": "RN0980",
+      "display": "RN0980-Sindrome di meckel"
+    },
+    {
+      "code": "RN0990",
+      "display": "RN0990-Sindrome di moebius"
+    },
+    {
+      "code": "RN1000",
+      "display": "RN1000-Sindrome di nager"
+    },
+    {
+      "code": "RN1010",
+      "display": "RN1010-Sindrome di noonan"
+    },
+    {
+      "code": "RN1020",
+      "display": "RN1020-Sindrome di opitz"
+    },
+    {
+      "code": "RN1021",
+      "display": "RN1021-Sindrome FG"
+    },
+    {
+      "code": "RN1030",
+      "display": "RN1030-Sindrome di pallister-hall"
+    },
+    {
+      "code": "RN1040",
+      "display": "RN1040-Sindrome di pfeiffer"
+    },
+    {
+      "code": "RN1050",
+      "display": "RN1050-Sindrome rieger"
+    },
+    {
+      "code": "RN1060",
+      "display": "RN1060-Sindrome di roberts"
+    },
+    {
+      "code": "RN1070",
+      "display": "RN1070-Sindrome di robinow"
+    },
+    {
+      "code": "RN1080",
+      "display": "RN1080-Sindrome di russell-silver"
+    },
+    {
+      "code": "RN1090",
+      "display": "RN1090-Sindrome di schinzel-giedion"
+    },
+    {
+      "code": "RN1100",
+      "display": "RN1100-Sindrome di seckel"
+    },
+    {
+      "code": "RN1110",
+      "display": "RN1110-Sequenza da ipocinesia fetale"
+    },
+    {
+      "code": "RN1120",
+      "display": "RN1120-Sindrome di simpson-golabi-behmel"
+    },
+    {
+      "code": "RN1130",
+      "display": "RN1130-Sindrome branchio-oculo-facciale"
+    },
+    {
+      "code": "RN1140",
+      "display": "RN1140-Sindrome branchio-oto-renale"
+    },
+    {
+      "code": "RN1150",
+      "display": "RN1150-Sindrome cardio-facio-cutanea"
+    },
+    {
+      "code": "RN1160",
+      "display": "RN1160-Sindrome oculo-cerebro-cutanea"
+    },
+    {
+      "code": "RN1170",
+      "display": "RN1170-Sindrome proteo"
+    },
+    {
+      "code": "RN1180",
+      "display": "RN1180-Sindrome trico-rino-falangea"
+    },
+    {
+      "code": "RN1190",
+      "display": "RN1190-Sindrome unghia-rotula"
+    },
+    {
+      "code": "RN1200",
+      "display": "RN1200-Sindrome di smith-lemli-opitz, tipo 1"
+    },
+    {
+      "code": "RN1210",
+      "display": "RN1210-Sindrome di smith-magenis"
+    },
+    {
+      "code": "RN1220",
+      "display": "RN1220-Sindrome di stickler"
+    },
+    {
+      "code": "RN1230",
+      "display": "RN1230-Sindrome di summit"
+    },
+    {
+      "code": "RN1240",
+      "display": "RN1240-Sindrome di townes-brocks"
+    },
+    {
+      "code": "RN1250",
+      "display": "RN1250-Vacterl associazione"
+    },
+    {
+      "code": "RN1260",
+      "display": "RN1260-Sindrome di wildervanck"
+    },
+    {
+      "code": "RN1270",
+      "display": "RN1270-Sindrome di williams"
+    },
+    {
+      "code": "RN1280",
+      "display": "RN1280-Sindrome di winchester"
+    },
+    {
+      "code": "RN1290",
+      "display": "RN1290-Sindrome di wolfram"
+    },
+    {
+      "code": "RN1300",
+      "display": "RN1300-Sindrome di angelman"
+    },
+    {
+      "code": "RN1310",
+      "display": "RN1310-Sindrome di prader-willi"
+    },
+    {
+      "code": "RN1320",
+      "display": "RN1320-Sindrome di marfan"
+    },
+    {
+      "code": "RN1330",
+      "display": "RN1330-Sindrome da x fragile"
+    },
+    {
+      "code": "RN1340",
+      "display": "RN1340-Sindrome di aase-smith"
+    },
+    {
+      "code": "RN1350",
+      "display": "RN1350-Sindrome di alagille"
+    },
+    {
+      "code": "RN1360",
+      "display": "RN1360-Sindrome di alport"
+    },
+    {
+      "code": "RN1370",
+      "display": "RN1370-Sindrome di alstrom"
+    },
+    {
+      "code": "RN1380",
+      "display": "RN1380-Sindrome di bardet-biedl"
+    },
+    {
+      "code": "RN1390",
+      "display": "RN1390-Sindrome di carpenter"
+    },
+    {
+      "code": "RN1400",
+      "display": "RN1400-Sindrome di cockayne"
+    },
+    {
+      "code": "RN1410",
+      "display": "RN1410-Sindrome di cornelia de lange"
+    },
+    {
+      "code": "RN1420",
+      "display": "RN1420-Malattia di de sanctis cacchione"
+    },
+    {
+      "code": "RN1430",
+      "display": "RN1430-Sindrome di denys-drash"
+    },
+    {
+      "code": "RN1440",
+      "display": "RN1440-Displasia oculo-digito-dentale"
+    },
+    {
+      "code": "RN1450",
+      "display": "RN1450-Displasia spondiloepifisaria congenita"
+    },
+    {
+      "code": "RN1460",
+      "display": "RN1460-Sindrome di fraser"
+    },
+    {
+      "code": "RN1470",
+      "display": "RN1470-Sindrome di hay-wells"
+    },
+    {
+      "code": "RN1480",
+      "display": "RN1480-Ipomelanosi di ito"
+    },
+    {
+      "code": "RN1490",
+      "display": "RN1490-Sindrome di isaacs"
+    },
+    {
+      "code": "RN1500",
+      "display": "RN1500-Sindrome kid"
+    },
+    {
+      "code": "RN1510",
+      "display": "RN1510-Sindrome di klippel-trenaunay"
+    },
+    {
+      "code": "RN1520",
+      "display": "RN1520-Sindrome di landau-kleffner"
+    },
+    {
+      "code": "RN1530",
+      "display": "RN1530-Sindrome leopard"
+    },
+    {
+      "code": "RN1540",
+      "display": "RN1540-Sindrome di levy-hollister"
+    },
+    {
+      "code": "RN1550",
+      "display": "RN1550-Sindrome di marshall-smith"
+    },
+    {
+      "code": "RN1560",
+      "display": "RN1560-Sindrome di neu-laxova"
+    },
+    {
+      "code": "RN1570",
+      "display": "RN1570-Neuroacantocitosi"
+    },
+    {
+      "code": "RN1580",
+      "display": "RN1580-Malattia di norrie"
+    },
+    {
+      "code": "RN1590",
+      "display": "RN1590-Sindrome di pallister-killian"
+    },
+    {
+      "code": "RN1600",
+      "display": "RN1600-Sindrome di pearson"
+    },
+    {
+      "code": "RN1610",
+      "display": "RN1610-Sindrome poems"
+    },
+    {
+      "code": "RN1620",
+      "display": "RN1620-Sindrome di rubinstein-taybi"
+    },
+    {
+      "code": "RN1630",
+      "display": "RN1630-Sindrome acrocallosa"
+    },
+    {
+      "code": "RN1640",
+      "display": "RN1640-Sindrome cerebro-oculo-facio-scheletrica"
+    },
+    {
+      "code": "RN1650",
+      "display": "RN1650-Sindrome del nevo displastico"
+    },
+    {
+      "code": "RN1660",
+      "display": "RN1660-Sindrome del nevo epidermale"
+    },
+    {
+      "code": "RN1670",
+      "display": "RN1670-Sindrome pterigio multiplo"
+    },
+    {
+      "code": "RN1680",
+      "display": "RN1680-Sindrome trico-dento-ossea"
+    },
+    {
+      "code": "RN1690",
+      "display": "RN1690-Sindrome trombocitopenica assenza di radio"
+    },
+    {
+      "code": "RN1700",
+      "display": "RN1700-Sindrome di sjvgren-larsonn"
+    },
+    {
+      "code": "RN1710",
+      "display": "RN1710-Sindrome di tay"
+    },
+    {
+      "code": "RN1720",
+      "display": "RN1720-Sindrome di vogt-koyanagi-harada"
+    },
+    {
+      "code": "RN1730",
+      "display": "RN1730-Sindrome di wagr"
+    },
+    {
+      "code": "RN1740",
+      "display": "RN1740-Sindrome di walker-warburg"
+    },
+    {
+      "code": "RN1750",
+      "display": "RN1750-Sindrome di weill-marchesani"
+    },
+    {
+      "code": "RN1760",
+      "display": "RN1760-Sindrome di zellweger"
+    },
+    {
+      "code": "RN1770",
+      "display": "RN1770-Sindrome cardiofacciale di Cayler"
+    },
+    {
+      "code": "RN1780",
+      "display": "RN1780-Char, sindrome di"
+    },
+    {
+      "code": "RN1810",
+      "display": "RN1810-Estrofia vescicale"
+    },
+    {
+      "code": "RN1830",
+      "display": "RN1830-Sindrome megalocornea-ritardo mentale"
+    },
+    {
+      "code": "RN1850",
+      "display": "RN1850-Mainzer-Saladino, sindrome di"
+    },
+    {
+      "code": "RP0010",
+      "display": "RP0010-Embriofetopatia rubeolica"
+    },
+    {
+      "code": "RP0020",
+      "display": "RP0020-Sindrome fetale da acido valproico"
+    },
+    {
+      "code": "RP0030",
+      "display": "RP0030-Sindrome fetale da idantoina"
+    },
+    {
+      "code": "RP0040",
+      "display": "RP0040-Sindrome alcolica fetale"
+    },
+    {
+      "code": "RP0050",
+      "display": "RP0050-Apnea infantile"
+    },
+    {
+      "code": "RP0060",
+      "display": "RP0060-Kernittero"
+    },
+    {
+      "code": "RP0070",
+      "display": "RP0070-Fibrosi epatica congenita"
+    },
+    {
+      "code": "RP0080",
+      "display": "RP0080-Embriopatia da iperfenilalaninemia"
+    },
+    {
+      "code": "RQ0010",
+      "display": "RQ0010-Sindrome di gerstmann"
+    },
+    {
+      "code": "R99",
+      "display": "R99 - Sospetto diagnostico di malattia rara"
+    },
+    {
+      "code": "S01",
+      "display": "S01 Grandi invalidi di servizio categoria i"
+    },
+    {
+      "code": "S02",
+      "display": "S02 Invalidità di servizio categoria da 2 a 5"
+    },
+    {
+      "code": "S03",
+      "display": "S03 Invalidità di servizio categoria da 6 a 8"
+    },
+    {
+      "code": "S36",
+      "display": "S36 Invalidità di guerra categoria da 6 a 8"
+    },
+    {
+      "code": "S37",
+      "display": "S37 Invalidità lavoro inferiore a due terzi"
+    },
+    {
+      "code": "S38",
+      "display": "S38 Infortunio sul lavoro o malattia prof."
+    },
+    {
+      "code": "S39",
+      "display": "S39 Invalidità di servizio categoria da 6 a 8"
+    },
+    {
+      "code": "S48",
+      "display": "S48 Invalidità di guerra categoria da 1 a 5"
+    },
+    {
+      "code": "S49",
+      "display": "S49 Invalidità lavoro superiore a due terzi"
+    },
+    {
+      "code": "S50",
+      "display": "S50 Invalidità di servizio categoria da 2 a 5"
+    },
+    {
+      "code": "S51",
+      "display": "S51 Invalidità civile superiore a due terzi"
+    },
+    {
+      "code": "S52",
+      "display": "S52 Invalidità civile ( assegno accomp.)"
+    },
+    {
+      "code": "S53",
+      "display": "S53 Cecita' o sordita' e mutismo"
+    },
+    {
+      "code": "S56",
+      "display": "S56 Grandi invalidi di servizio categoria i"
+    },
+    {
+      "code": "S57",
+      "display": "S57 Invalidi civili al 100%"
+    },
+    {
+      "code": "S58",
+      "display": "S58 Cecita' assoluta"
+    },
+    {
+      "code": "S59",
+      "display": "S59 Grandi invalidi del lavoro"
+    },
+    {
+      "code": "S60",
+      "display": "S60 Pensionati sociali"
+    },
+    {
+      "code": "TDL",
+      "display": "TDL Terapia del dolore severo"
+    },
+    {
+      "code": "T01",
+      "display": "T01 Prestazioni specialistiche correlate all'attività di donazione"
+    },
+    {
+      "code": "V01",
+      "display": "V01 Invalidità vittime del terrorismo"
+    },
+    {
+      "code": "X01",
+      "display": "X01 Prestazioni ambulatoriali urgenti a cittadini extracomunitari non in regola e privi di risorse economiche"
+    },
+    {
+      "code": "001",
+      "display": "001-Acromegalia e gigantismo"
+    },
+    {
+      "code": "002",
+      "display": "002-Affezioni del sistema circolatorio"
+    },
+    {
+      "code": "002A",
+      "display": "002A-Malattie cardiache e del circolo polmonare"
+    },
+    {
+      "code": "002B",
+      "display": "002B-Malattie cerebrovascolari"
+    },
+    {
+      "code": "002C",
+      "display": "002C-Malattie delle arterie, arteriole, vasi linf."
+    },
+    {
+      "code": "003",
+      "display": "003-Anemia emolitica acquisita da autoimmuniz."
+    },
+    {
+      "code": "004",
+      "display": "004-Anemie emolitiche ereditarie"
+    },
+    {
+      "code": "005",
+      "display": "005-Anoressia nervosa, bulimia"
+    },
+    {
+      "code": "006",
+      "display": "006-Artrite reumatoide"
+    },
+    {
+      "code": "007",
+      "display": "007-Asma"
+    },
+    {
+      "code": "008",
+      "display": "008-Cirrosi epatica, cirrosi biliare"
+    },
+    {
+      "code": "009",
+      "display": "009-Colite ulcerosa e malattia di crohn"
+    },
+    {
+      "code": "010",
+      "display": "010-Connettivite mista"
+    },
+    {
+      "code": "011",
+      "display": "011-Demenze"
+    },
+    {
+      "code": "012",
+      "display": "012-Diabete insipido"
+    },
+    {
+      "code": "013",
+      "display": "013-Diabete mellito"
+    },
+    {
+      "code": "014",
+      "display": "014-Dipendenza da stupefacenti e alcool"
+    },
+    {
+      "code": "015",
+      "display": "015-Disturbi interessanti sistema immunitario"
+    },
+    {
+      "code": "016",
+      "display": "016-Epatite cronica (attiva)"
+    },
+    {
+      "code": "017",
+      "display": "017-Epilessia"
+    },
+    {
+      "code": "018",
+      "display": "018-Fibrosi cistica"
+    },
+    {
+      "code": "019",
+      "display": "019-Glaucoma"
+    },
+    {
+      "code": "020",
+      "display": "020-Infezione da hiv"
+    },
+    {
+      "code": "021",
+      "display": "021-Insufficienza cardiaca"
+    },
+    {
+      "code": "022",
+      "display": "022-Insuff. corticosurrenale cronica"
+    },
+    {
+      "code": "023",
+      "display": "023-Insufficienza renale cronica"
+    },
+    {
+      "code": "024",
+      "display": "024-Insufficienza respiratoria cronica"
+    },
+    {
+      "code": "025",
+      "display": "025-Ipercolesterolemia familiare-primitiva"
+    },
+    {
+      "code": "026",
+      "display": "026-Iperparatiroidismo, ipoparatiroidismo"
+    },
+    {
+      "code": "027",
+      "display": "027-Ipotiroidismo congenito ed acquisito"
+    },
+    {
+      "code": "028",
+      "display": "028-Lupus eritematoso sistemico"
+    },
+    {
+      "code": "029",
+      "display": "029-Malattia di alzheimer"
+    },
+    {
+      "code": "030",
+      "display": "030-Malattia di sjogren"
+    },
+    {
+      "code": "031A",
+      "display": "031A-Ipertensione arteriosa senza danno d'organo"
+    },
+    {
+      "code": "031",
+      "display": "031-Ipertensione arteriosa con danno d'organo"
+    },
+    {
+      "code": "032",
+      "display": "032-Malattia o sindrome di cushing"
+    },
+    {
+      "code": "033",
+      "display": "033-Malattie da difetti della coagulazione"
+    },
+    {
+      "code": "034",
+      "display": "034-Miastenia grave"
+    },
+    {
+      "code": "035",
+      "display": "035-Morbo di basedow, ipertiroidismo"
+    },
+    {
+      "code": "036",
+      "display": "036-Morbo di buerger"
+    },
+    {
+      "code": "037",
+      "display": "037-Morbo di paget"
+    },
+    {
+      "code": "038",
+      "display": "038-Morbo parkinson, malattie extrapiramidali"
+    },
+    {
+      "code": "039",
+      "display": "039-Nanismo ipofisario"
+    },
+    {
+      "code": "040",
+      "display": "040-Neonati prematuri,a termine con ricovero"
+    },
+    {
+      "code": "041",
+      "display": "041-Neuromielite ottica"
+    },
+    {
+      "code": "042",
+      "display": "042-Pancreatite cronica"
+    },
+    {
+      "code": "043",
+      "display": "043-Poliarterite nodosa"
+    },
+    {
+      "code": "044",
+      "display": "044-Psicosi"
+    },
+    {
+      "code": "045",
+      "display": "045-Psoriasi (artropatica,pustolosa,eritrod.)"
+    },
+    {
+      "code": "046",
+      "display": "046-Sclerosi multipla"
+    },
+    {
+      "code": "047",
+      "display": "047-Sclerosi sistemica (progressiva)"
+    },
+    {
+      "code": "048",
+      "display": "048-Patologie neoplastiche maligne"
+    },
+    {
+      "code": "049",
+      "display": "049-Pluripatologie con danni irreversibili"
+    },
+    {
+      "code": "050",
+      "display": "050-Soggetti in attesa di trapianto"
+    },
+    {
+      "code": "051",
+      "display": "051-Sogg. nati con gravi deficit fisici,.."
+    },
+    {
+      "code": "052",
+      "display": "052-Soggetti sottoposti a trapianto"
+    },
+    {
+      "code": "053",
+      "display": "053-Soggetti sottoposti a trapianto di cornea"
+    },
+    {
+      "code": "054",
+      "display": "054-Spondilite anchilosante"
+    },
+    {
+      "code": "055",
+      "display": "055-Tubercolosi(attiva bacillifera)"
+    },
+    {
+      "code": "056",
+      "display": "056-Tiroidite di hashimoto"
+    },
+    {
+      "code": "057",
+      "display": "057 - Broncopneumopatia cronica ostruttiva 'Moderata' 'Grave' 'Molto grave'"
+    },
+    {
+      "code": "058",
+      "display": "058 - Donatori organo"
+    },
+    {
+      "code": "059",
+      "display": "059 - Malattia celiaca"
+    },
+    {
+      "code": "060",
+      "display": "060 - Osteomielite cronica"
+    },
+    {
+      "code": "061",
+      "display": "061 - Patologie renali croniche (clearance <85ml/min)"
+    },
+    {
+      "code": "062",
+      "display": "062 - Rene policistico autosomico dominante"
+    },
+    {
+      "code": "063",
+      "display": "063-Endometriosi 'Moderata' e 'Grave' (III - IV stadio ASRM)"
+    },
+    {
+      "code": "064",
+      "display": "064-Sidrome da Talidomide"
+    },
+    {
+      "code": "065",
+      "display": "065 - Sindrome di Down"
+    },
+    {
+      "code": "066",
+      "display": "066 - Sindrome di Klinefelter"
+    },
+    {
+      "code": "067",
+      "display": "067 - Connettiviti indifferenziate"
+    },
+    {
+      "code": "1FEB91",
+      "display": "1FEBd91-Articolo 5"
+    }
+  ]
+}

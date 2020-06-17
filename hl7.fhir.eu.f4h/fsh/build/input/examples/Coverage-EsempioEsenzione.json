@@ -1,0 +1,63 @@
+{
+  "resourceType": "Coverage",
+  "id": "EsempioEsenzione",
+  "meta": {
+    "profile": [
+      "http://hl7.it/fhir/StructureDefinition/Coverage-esenzioni-it"
+    ]
+  },
+  "costToBeneficiary": [
+    {
+      "valueMoney": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode": "not-applicable"
+          }
+        ]
+      },
+      "exception": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.it/fhir/StructureDefinition/coverage-statoEsenzione",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "active",
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActStatus"
+                  }
+                ]
+              }
+            }
+          ],
+          "type": {
+            "coding": [
+              {
+                "code": "E01",
+                "system": "http://hl7.it/fhir/CodeSystem/esenzioni-MinSan"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "status": "active",
+  "type": {
+    "coding": [
+      {
+        "code": "PUBLICPOL",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+      }
+    ]
+  },
+  "beneficiary": {
+    "reference": "Patient/Patient-CF-residenza"
+  },
+  "payor": [
+    {
+      "reference": "Organization/ASL-example"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "UriIdRegionali",
+  "id": "UriIdRegionali",
+  "title": "Identificativi per anagrafi regionali",
+  "description": "Identificativi per anagrafi regionali",
+  "version": "0.1.0",
+  "url": "http://hl7.it/fhir/ValueSet/UriIdRegionali",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:ietf:rfc:3986",
+        "concept": [
+          {
+            "code": "http://hl7.it/sid/lazio/asur",
+            "display": "Anagrafe Sanitaria Unica Regionale - Lazio"
+          },
+          {
+            "code": "http://hl7.it/sid/piemonte/aura",
+            "display": "Archivio Unico Regionale degli Assistiti - Piemonte"
+          },
+          {
+            "code": "urn:oid:2.16.840.1.113883.2.9.2.20.4.1",
+            "display": "MPI (angrafe unica aziendale) - Valle d'Aosta"
+          },
+          {
+            "code": "urn:oid:2.16.840.1.113883.2.9.2.50.4.1",
+            "display": "ANAGRAFE UNICA REGIONALE - Veneto"
+          },
+          {
+            "code": "urn:oid:2.16.840.1.113883.2.9.2.60.4.1",
+            "display": "Anagrafe Unica - Friuli-Venezia Giulia"
+          }
+        ]
+      }
+    ]
+  }
+}

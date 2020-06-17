@@ -1,0 +1,11 @@
+{
+	"name": "f4h-template",
+	"version": "0.1",
+	"type": "fhir.template",
+	"license": "CC0-1.0",
+	"description": "Fair4Health FHIR Template",
+	"base": "fhir.base.template",
+	"dependencies": {
+		"fhir.base.template": "current"
+	}
+}

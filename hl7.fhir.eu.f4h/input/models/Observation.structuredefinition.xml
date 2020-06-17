@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../fhir-all-xsd/structuredefinition.xsd">
+	<id value="Observation"/>
+	<url value="http://hl7.eu/fhir/f4h/StructureDefinition/Observation"/>
+	<name value="Observation"/>
+	<title value="Opt-1: Observation"/>
+	<status value="draft"/>
+	<description value="Minimal set of Observation data used by the FAIR4Health project."/>
+	<kind value="logical"/>
+	<abstract value="true"/>
+	<type value="Observation"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+	<derivation value="specialization"/>
+	<differential>
+		<element id="Observation">
+			<path value="Observation"/>
+			<short value="Observation F4H Attributes"/>
+			<definition value="Non-exhaustive, collection of data used for administration, identification, assurance of identity and preferences within a Observation summary."/>
+			<min value="1"/>
+			<max value="*"/>
+		</element>
+		<element id="Observation.identifier">
+			<path value="Observation.identifier"/>
+			<short value="Observation identifier"/>
+			<definition value="Observation identifier"/>
+			<min value="1"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Observation.encounterID">
+			<path value="Observation.encounterID"/>
+			<short value="Encounter identifier"/>
+			<definition value="Encounter identifier"/>
+			<min value="1"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Observation.subjectID">
+			<path value="Observation.subjectID"/>
+			<short value="Patient identifier"/>
+			<definition value="Patient identifier"/>
+			<min value="1"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Observation.date">
+			<path value="Observation.date"/>
+			<short value="Observation date"/>
+			<definition value="Observation date"/>
+			<min value="1"/>
+			<max value="*"/>
+			<type>
+				<code value="date"/>
+			</type>
+		</element>
+		<element id="Observation.code">
+			<path value="Observation.code"/>
+			<short value="Observation code"/>
+			<definition value="Observation code"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="code"/>
+			</type>
+		</element>
+		<element id="Observation.codeDisplay">
+			<path value="Observation.codeDisplay"/>
+			<short value="Observation type (short description)"/>
+			<definition value="Observation type (short description)"/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Observation.value">
+			<path value="Observation.value"/>
+			<short value="Observation value"/>
+			<definition value="Observation value"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="http://hl7.eu/fhir/f4h/StructureDefinition/Any"/>
+			</type>
+		</element>
+	</differential>
+</StructureDefinition>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../fhir-all-xsd/structuredefinition.xsd">
+	<id value="LabResult"/>
+	<url value="http://hl7.eu/fhir/f4h/StructureDefinition/LabResult"/>
+	<name value="LabResult"/>
+	<title value="Opt-1: Laboratory Result"/>
+	<status value="draft"/>
+	<description value="Minimal set of Laboratory Test  data used by the FAIR4Health project."/>
+	<kind value="logical"/>
+	<abstract value="true"/>
+	<type value="LabResult"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+	<derivation value="specialization"/>
+	<differential>
+		<element id="LabResult">
+			<path value="LabResult"/>
+			<short value="LabResult F4H Attributes"/>
+			<definition value="LabResult F4H Attributes"/>
+			<min value="1"/>
+			<max value="*"/>
+		</element>
+		<element id="LabResult.identifier">
+			<path value="LabResult.identifier"/>
+			<short value="LabResult identifier"/>
+			<definition value="LabResult identifier"/>
+			<min value="1"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="LabResult.encounterID">
+			<path value="LabResult.encounterID"/>
+			<short value="Encounter identifier"/>
+			<definition value="Encounter identifier"/>
+			<min value="1"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="LabResult.subjectID">
+			<path value="LabResult.subjectID"/>
+			<short value="Patient identifier"/>
+			<definition value="Patient identifier"/>
+			<min value="1"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="LabResult.date">
+			<path value="LabResult.date"/>
+			<short value="LabResult date"/>
+			<definition value="LabResult date"/>
+			<min value="1"/>
+			<max value="*"/>
+			<type>
+				<code value="date"/>
+			</type>
+		</element>
+		<element id="LabResult.testCode">
+			<path value="LabResult.testCode"/>
+			<short value="Laboratory test (code)"/>
+			<definition value="Laboratory test (code)"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="code"/>
+			</type>
+		</element>
+		<element id="LabResult.codeDisplay">
+			<path value="LabResult.codeDisplay"/>
+			<short value="Laboratory test (short description)"/>
+			<definition value="LabResult test (short description)"/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="LabResult.result">
+			<path value="LabResult.result"/>
+			<short value="Laboratory test result"/>
+			<definition value="Laboratory test result"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="BackboneElement"/>
+			</type>
+		</element>
+		
+		<element id="LabResult.result.value">
+			<path value="LabResult.result.value"/>
+			<short value="Laboratory test result value"/>
+			<definition value="Laboratory test result value"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="decimal"/>
+			</type>
+			<type>
+				<code value="integer"/>
+			</type>
+				<type>
+				<code value="code"/>
+			</type>
+		</element>
+		<element id="LabResult.result.unit">
+			<path value="LabResult.result.unit"/>
+			<short value="Laboratory test result UCUM unit"/>
+			<definition value="Laboratory test result UCUM unit"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="code"/>
+			</type>
+		</element>
+	</differential>
+</StructureDefinition>

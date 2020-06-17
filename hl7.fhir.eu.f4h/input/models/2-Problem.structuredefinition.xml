@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../fhir-all-xsd/structuredefinition.xsd">
+	<id value="Problem2"/>
+	<url value="http://hl7.eu/fhir/f4h/StructureDefinition/Problem2"/>
+	<name value="Problem2"/>
+	<title value="Opt-2: Problem"/>
+	<status value="draft"/>
+	<description value="Minimal set of Problem2 data used by the FAIR4Health project."/>
+	<kind value="logical"/>
+	<abstract value="true"/>
+	<type value="Problem2"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+	<derivation value="specialization"/>
+	<differential>
+		<element id="Problem2">
+			<path value="Problem2"/>
+			<short value="Problem2 F4H Attributes"/>
+			<definition value="Problem2 F4H Attributes"/>
+			<min value="1"/>
+			<max value="*"/>
+		</element>
+		<element id="Problem2.identifier">
+			<path value="Problem2.identifier"/>
+			<short value="Problem2 identifier"/>
+			<definition value="Problem2 identifier"/>
+			<min value="1"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Problem2.date">
+			<path value="Problem2.date"/>
+			<short value="Problem2 date"/>
+			<definition value="Problem2 date"/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="date"/>
+			</type>
+		</element>
+		<element id="Problem2.code">
+			<path value="Problem2.code"/>
+			<short value="Problem2 code"/>
+			<definition value="Problem2 code"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="code"/>
+			</type>
+		</element>
+		<element id="Problem2.codeDisplay">
+			<path value="Problem2.codeDisplay"/>
+			<short value="Problem2 code (short description)"/>
+			<definition value="Problem2 code (short description)"/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Problem2.listPosition">
+			<path value="Problem2.listPosition"/>
+			<short value="Problem2 list position"/>
+			<definition value="Problem2 list position"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="positiveInt"/>
+			</type>
+		</element>
+	</differential>
+</StructureDefinition>

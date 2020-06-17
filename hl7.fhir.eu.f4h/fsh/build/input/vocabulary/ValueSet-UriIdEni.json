@@ -1,0 +1,39 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "UriIdEni",
+  "id": "UriIdEni",
+  "title": "Identificativi per codici ENI regionali",
+  "description": "Identificativi per codici regionali.",
+  "version": "0.1.0",
+  "url": "http://hl7.it/fhir/ValueSet/UriIdEni",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:ietf:rfc:3986",
+        "concept": [
+          {
+            "code": "http://hl7.it/sid/eni",
+            "display": "Codici ENI"
+          },
+          {
+            "code": "http://hl7.it/sid/lazio/eni",
+            "display": "Codici ENI - Lazio"
+          },
+          {
+            "code": "http://hl7.it/sid/piemonte/eni",
+            "display": "Codici ENI - Piemonte"
+          },
+          {
+            "code": "http://hl7.it/sid/vallee/eni",
+            "display": "Codici ENI - Valle d'Aosta"
+          },
+          {
+            "code": "urn:oid:2.16.840.1.113883.2.9.2.50.4.1.4",
+            "display": "Codici ENI - Veneto"
+          }
+        ]
+      }
+    ]
+  }
+}

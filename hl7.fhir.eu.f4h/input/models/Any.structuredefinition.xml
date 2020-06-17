@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+	<id value="Any"/>
+	<url value="http://hl7.eu/fhir/f4h/StructureDefinition/Any"/>
+	<name value="Any"/>
+	<title value="Abstract datatype: Any"/>
+	<status value="draft"/>
+	<description value="Defines the basic properties of every data value. This is conceptually an abstract type, meaning that no proper value can be just a data value without belonging to any concrete type."/>
+	<kind value="logical"/>
+	<abstract value="true"/>
+	<type value="Any"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+	<derivation value="specialization"/>
+	<differential>
+		<element id="Any">
+			<path value="Any"/>
+			<short value="Any"/>
+			<definition value="Defines the basic properties of every data value. This is conceptually an abstract type, meaning that no proper value can be just a data value without belonging to any concrete type."/>
+			<min value="0"/>
+			<max value="*"/>
+			<mapping>
+				<identity value="fhir"/>
+				<map value="Element"/>
+			</mapping>
+			<mapping>
+				<identity value="rim"/>
+				<map value="Any"/>
+			</mapping>
+		</element>
+	</differential>
+</StructureDefinition>

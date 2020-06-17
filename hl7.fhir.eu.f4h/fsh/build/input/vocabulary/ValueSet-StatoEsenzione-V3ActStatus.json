@@ -1,0 +1,44 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "StatoEsenzioneV3ActStatus",
+  "id": "StatoEsenzione-V3ActStatus",
+  "title": "Stato delle esenzioni (V3ActStatus).",
+  "description": "Value Set basato sul vocabolario HL7 V3 ActStatus che descrive lo stato delle esenzioni. Questo value set è adottato da HL7 CDA R2 IG 'DOCUMENTO DI ESENZIONE'",
+  "version": "0.1.0",
+  "url": "http://hl7.it/fhir/ValueSet/StatoEsenzione-V3ActStatus",
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActStatus",
+        "concept": [
+          {
+            "code": "active",
+            "display": "attivo"
+          },
+          {
+            "code": "suspended",
+            "display": "sospeso"
+          },
+          {
+            "code": "aborted",
+            "display": "abortito"
+          },
+          {
+            "code": "completed",
+            "display": "completato"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "concept": [
+          {
+            "code": "UNK",
+            "display": "sconosciuto"
+          }
+        ]
+      }
+    ]
+  }
+}

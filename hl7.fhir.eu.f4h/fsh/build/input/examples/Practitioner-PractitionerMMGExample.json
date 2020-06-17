@@ -1,0 +1,18 @@
+{
+  "resourceType": "Practitioner",
+  "id": "PractitionerMMGExample",
+  "identifier": [
+    {
+      "system": "http://example.org/sid/codiceRegionale",
+      "value": "123456789"
+    }
+  ],
+  "name": [
+    {
+      "family": "Rossi",
+      "given": [
+        "Martino"
+      ]
+    }
+  ]
+}

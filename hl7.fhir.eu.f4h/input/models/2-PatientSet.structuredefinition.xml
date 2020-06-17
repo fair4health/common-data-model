@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../fhir-all-xsd/structuredefinition.xsd">
+	<id value="PatientSet2"/>
+	<url value="http://hl7.eu/fhir/f4h/StructureDefinition/PatientSet2"/>
+	<name value="PatientSet2"/>
+	<title value="Opt-2: Patient Set"/>
+	<status value="draft"/>
+	<description value="Minimal set of Patient data used by the FAIR4Health project."/>
+	<kind value="logical"/>
+	<abstract value="true"/>
+	<type value="PatientSet2"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+	<derivation value="specialization"/>
+	<differential>
+		<element id="PatientSet2">
+			<path value="PatientSet2"/>
+			<short value="Patient Set F4H Attributes"/>
+			<definition value="Non-exhaustive, collection of data used for administration, identification, assurance of identity and preferences within a Patient Set summary."/>
+			<min value="1"/>
+			<max value="*"/>
+		</element>
+		<element id="PatientSet2.patientAttributes">
+			<path value="PatientSet2.patientAttributes"/>
+			<short value="Patient Attributes"/>
+			<definition value="Patient Attributes"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="http://hl7.eu/fhir/f4h/StructureDefinition/Patient"/>
+			</type>
+		</element>
+		<element id="PatientSet2.encounters">
+			<path value="PatientSet2.encounters"/>
+			<short value="List of Encounters"/>
+			<definition value="DEFINITION."/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="http://hl7.eu/fhir/f4h/StructureDefinition/Encounter2"/>
+			</type>
+		</element>		
+	</differential>
+</StructureDefinition>

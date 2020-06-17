@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../fhir-all-xsd/structuredefinition.xsd">
+	<id value="Observation2"/>
+	<url value="http://hl7.eu/fhir/f4h/StructureDefinition/Observation2"/>
+	<name value="Observation2"/>
+	<title value="Opt-2: Observation"/>
+	<status value="draft"/>
+	<description value="Minimal set of Observation2 data used by the FAIR4Health project."/>
+	<kind value="logical"/>
+	<abstract value="true"/>
+	<type value="Observation2"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+	<derivation value="specialization"/>
+	<differential>
+		<element id="Observation2">
+			<path value="Observation2"/>
+			<short value="Observation2 F4H Attributes"/>
+			<definition value="Non-exhaustive, collection of data used for administration, identification, assurance of identity and preferences within a Observation2 summary."/>
+			<min value="1"/>
+			<max value="*"/>
+		</element>
+		<element id="Observation2.identifier">
+			<path value="Observation2.identifier"/>
+			<short value="Observation2 identifier"/>
+			<definition value="Observation2 identifier"/>
+			<min value="1"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Observation2.date">
+			<path value="Observation2.date"/>
+			<short value="Observation2 date"/>
+			<definition value="Observation2 date"/>
+			<min value="1"/>
+			<max value="*"/>
+			<type>
+				<code value="date"/>
+			</type>
+		</element>
+		<element id="Observation2.code">
+			<path value="Observation2.code"/>
+			<short value="Observation2 code"/>
+			<definition value="Observation2 code"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="code"/>
+			</type>
+		</element>
+		<element id="Observation2.codeDisplay">
+			<path value="Observation2.codeDisplay"/>
+			<short value="Observation2 type (short description)"/>
+			<definition value="Observation2 type (short description)"/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Observation2.value">
+			<path value="Observation2.value"/>
+			<short value="Observation2 value"/>
+			<definition value="Observation2 value"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="http://hl7.eu/fhir/f4h/StructureDefinition/Any"/>
+			</type>
+		</element>
+	</differential>
+</StructureDefinition>

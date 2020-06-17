@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="diseases-f4h-sct"/>
+	<url value="http://hl7.eu/fhir/f4h/ValueSet/diseases-f4h-sct"/>
+	<version value="2017-05-03T00:00:00"/>
+	<name value="DiseasesF4hSnomed"/>
+	<title value="Diseases F4H Use Cases 1 and 2 (SNOMED CT)"/>
+	<status value="draft"/>
+	<experimental value="false"/>
+	<description value="Diseases to be tracked for the FAIR4Health use cases 1 and 2. This value set is based on SNOMED Clinical Terms® (SNOMED CT®)"/>
+	<immutable value="false"/>
+	<copyright value="Licensing note: This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<concept>
+				<code value="84114007"/>
+				<display value="Heart failure (disorder)"/>
+			</concept>
+			<concept>
+				<code value="53741008"/>
+				<display value="Coronary arteriosclerosis (disorder)"/>
+			</concept>
+			<concept>
+				<code value="38341003"/>
+				<display value="Hypertensive disorder, systemic arterial (disorder)"/>
+			</concept>
+			<concept>
+				<code value="49436004"/>
+				<display value="Atrial fibrillation (disorder)"/>
+			</concept>
+			<concept>
+				<code value="70995007"/>
+				<display value="Pulmonary hypertension (disorder)"/>
+			</concept>
+			<concept>
+				<code value="709044004"/>
+				<display value="Chronic kidney disease (disorder)"/>
+			</concept>
+			<concept>
+				<code value="266569009"/>
+				<display value="Benign prostatic hyperplasia (disorder)"/>
+			</concept>
+			<concept>
+				<code value="95570007"/>
+				<display value="Kidney stone (disorder)"/>
+			</concept>
+			<concept>
+				<code value="13645005"/>
+				<display value="Chronic obstructive lung disease (disorder)"/>
+			</concept>
+			<concept>
+				<code value="87433001"/>
+				<display value="Pulmonary emphysema (disorder)"/>
+			</concept>
+			<concept>
+				<code value="63480004"/>
+				<display value="Chronic bronchitis (disorder)"/>
+			</concept>
+			<concept>
+				<code value="195967001"/>
+				<display value="Asthma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="78275009"/>
+				<display value="Obstructive sleep apnea syndrome (disorder)"/>
+			</concept>
+			<concept>
+				<code value="59282003"/>
+				<display value="Pulmonary embolism (disorder)"/>
+			</concept>
+			<concept>
+				<code value="73211009"/>
+				<display value="Diabetes mellitus (disorder)"/>
+			</concept>
+			<concept>
+				<code value="55822004"/>
+				<display value="Hyperlipidemia (disorder)"/>
+			</concept>
+			<concept>
+				<code value="414916001"/>
+				<display value="Obesity (disorder)"/>
+			</concept>
+			<concept>
+				<code value="40930008"/>
+				<display value="Hypothyroidism (disorder)"/>
+			</concept>
+			<concept>
+				<code value="34486009"/>
+				<display value="Hyperthyroidism (disorder)"/>
+			</concept>
+			<concept>
+				<code value="24526004"/>
+				<display value="Inflammatory bowel disease (disorder)"/>
+			</concept>
+			<concept>
+				<code value="328383001"/>
+				<display value="Chronic liver disease (disorder)"/>
+			</concept>
+			<concept>
+				<code value="235494005"/>
+				<display value="Chronic pancreatitis (disorder)"/>
+			</concept>
+			<concept>
+				<code value="235595009"/>
+				<display value="Gastroesophageal reflux disease (disorder)"/>
+			</concept>
+			<concept>
+				<code value="398050005"/>
+				<display value="Diverticular disease of colon (disorder)"/>
+			</concept>
+			<concept>
+				<code value="230690007"/>
+				<display value="Cerebrovascular accident (disorder)"/>
+			</concept>
+			<concept>
+				<code value="266257000"/>
+				<display value="Transient ischemic attack (disorder)"/>
+			</concept>
+			<concept>
+				<code value="49049000"/>
+				<display value="Parkinson's disease (disorder)"/>
+			</concept>
+			<concept>
+				<code value="26929004"/>
+				<display value="Alzheimer's disease (disorder)"/>
+			</concept>
+			<concept>
+				<code value="74732009"/>
+				<display value="Mental disorder (disorder)"/>
+			</concept>
+			<concept>
+				<code value="302226006"/>
+				<display value="Peripheral nerve disease (disorder)"/>
+			</concept>
+			<concept>
+				<code value="24700007"/>
+				<display value="Multiple sclerosis (disorder)"/>
+			</concept>
+			<concept>
+				<code value="55342001"/>
+				<display value="Neoplastic disease (disorder)"/>
+			</concept>
+			<concept>
+				<code value="86406008"/>
+				<display value="Human immunodeficiency virus infection (disorder)"/>
+			</concept>
+			<concept>
+				<code value="191268006"/>
+				<display value="Chronic anemia (disorder)"/>
+			</concept>
+			<concept>
+				<code value="85828009"/>
+				<display value="Autoimmune disease (disorder)"/>
+			</concept>
+			<concept>
+				<code value="38850007"/>
+				<display value="hronic arthropathy (disorder)"/>
+			</concept>
+			<concept>
+				<code value="64859006"/>
+				<display value="Osteoporosis (disorder)"/>
+			</concept>
+			<concept>
+				<code value="399957001"/>
+				<display value="Peripheral arterial occlusive disease (disorder)"/>
+			</concept>
+<!-- 			<concept>
+				<code value="762713009"/>
+				<display value="Charlson Comorbidity Index (assessment scale)"/>
+			</concept> -->
+		</include>
+	</compose>
+</ValueSet>

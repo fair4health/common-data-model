@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../fhir-all-xsd/structuredefinition.xsd">
+	<id value="Encounter"/>
+	<url value="http://hl7.eu/fhir/f4h/StructureDefinition/Encounter"/>
+	<name value="Encounter"/>
+	<title value="Opt-1: Encounter"/>
+	<status value="draft"/>
+	<description value="Minimal set of Encounter data used by the FAIR4Health project."/>
+	<kind value="logical"/>
+	<abstract value="true"/>
+	<type value="Encounter"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+	<derivation value="specialization"/>
+	<differential>
+		<element id="Encounter">
+			<path value="Encounter"/>
+			<short value="Encounter F4H Attributes"/>
+			<definition value="Non-exhaustive, collection of data used for administration, identification, assurance of identity and preferences within a Encounter summary."/>
+			<min value="1"/>
+			<max value="*"/>
+		</element>
+		<element id="Encounter.identifier">
+			<path value="Encounter.identifier"/>
+			<short value="Encounter identifier"/>
+			<definition value="Note, Encounter Number is often used as a synonym, albeit that the identifier is not necessarily numeric; some jurisdictions use the Social Security Number as a healthcare identifier."/>
+			<min value="1"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Encounter.subjectID">
+			<path value="Encounter.subjectID"/>
+			<short value="Patient Identifier"/>
+			<definition value="DEFINITION."/>
+			<min value="1"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Encounter.startDate">
+			<path value="Encounter.startDate"/>
+			<short value="Encounter start date"/>
+			<definition value="Encounter start date"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="date"/>
+			</type>
+		</element>
+		<element id="Encounter.endDate">
+			<path value="Encounter.endDate"/>
+			<short value="Encounter end date"/>
+			<definition value="Encounter end date"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="date"/>
+			</type>
+		</element>
+	</differential>
+</StructureDefinition>

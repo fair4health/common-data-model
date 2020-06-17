@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../fhir-all-xsd/structuredefinition.xsd">
+	<id value="PatientSet"/>
+	<url value="http://hl7.eu/fhir/f4h/StructureDefinition/PatientSet"/>
+	<name value="PatientSet"/>
+	<title value="Opt-1: Patient Set"/>
+	<status value="draft"/>
+	<description value="Minimal set of Patient data used by the FAIR4Health project."/>
+	<kind value="logical"/>
+	<abstract value="true"/>
+	<type value="PatientSet"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+	<derivation value="specialization"/>
+	<differential>
+		<element id="PatientSet">
+			<path value="PatientSet"/>
+			<short value="Patient Set F4H Attributes"/>
+			<definition value="Non-exhaustive, collection of data used for administration, identification, assurance of identity and preferences within a Patient Set summary."/>
+			<min value="1"/>
+			<max value="*"/>
+		</element>
+		<element id="PatientSet.patientAttributes">
+			<path value="PatientSet.patientAttributes"/>
+			<short value="Patient Attributes"/>
+			<definition value="Patient Attributes"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="http://hl7.eu/fhir/f4h/StructureDefinition/Patient"/>
+			</type>
+		</element>
+		<element id="PatientSet.encounters">
+			<path value="PatientSet.encounters"/>
+			<short value="List of Encounters"/>
+			<definition value="DEFINITION."/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="http://hl7.eu/fhir/f4h/StructureDefinition/Encounter"/>
+			</type>
+		</element>
+		<element id="PatientSet.problems">
+			<path value="PatientSet.problems"/>
+			<short value="List of Problems"/>
+			<definition value="DEFINITION."/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="http://hl7.eu/fhir/f4h/StructureDefinition/Problem"/>
+			</type>
+		</element>
+		<element id="PatientSet.medications">
+			<path value="PatientSet.medications"/>
+			<short value="List of Medications"/>
+			<definition value="DEFINITION."/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="http://hl7.eu/fhir/f4h/StructureDefinition/Medication"/>
+			</type>
+		</element>
+		<element id="PatientSet.observations">
+			<path value="PatientSet.observations"/>
+			<short value="List of Observations"/>
+			<definition value="DEFINITION."/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="http://hl7.eu/fhir/f4h/StructureDefinition/Observation"/>
+			</type>
+		</element>
+				<element id="PatientSet.labResults">
+			<path value="PatientSet.labResults"/>
+			<short value="List of Laboratory Results"/>
+			<definition value="DEFINITION."/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="http://hl7.eu/fhir/f4h/StructureDefinition/LabResult"/>
+			</type>
+		</element>
+	</differential>
+</StructureDefinition>

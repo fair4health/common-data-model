@@ -1,0 +1,361 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "DUG",
+  "id": "DUG",
+  "title": "Registro delle Denominazioni Urbanistiche Generiche (DUG)",
+  "description": "Registro delle Denominazioni Urbanistiche Generiche (DUG)",
+  "version": "0.1.0",
+  "url": "http://hl7.it/fhir/CodeSystem/DUG",
+  "concept": [
+    {
+      "code": "1",
+      "display": "arco"
+    },
+    {
+      "code": "2",
+      "display": "autostrada"
+    },
+    {
+      "code": "3",
+      "display": "belvedere"
+    },
+    {
+      "code": "4",
+      "display": "calata"
+    },
+    {
+      "code": "5",
+      "display": "calle"
+    },
+    {
+      "code": "6",
+      "display": "cavalcavia"
+    },
+    {
+      "code": "7",
+      "display": "circonvallazione"
+    },
+    {
+      "code": "8",
+      "display": "corso"
+    },
+    {
+      "code": "9",
+      "display": "corte"
+    },
+    {
+      "code": "10",
+      "display": "cortile"
+    },
+    {
+      "code": "11",
+      "display": "discesa"
+    },
+    {
+      "code": "12",
+      "display": "galleria"
+    },
+    {
+      "code": "13",
+      "display": "gradinata"
+    },
+    {
+      "code": "14",
+      "display": "larghetto"
+    },
+    {
+      "code": "15",
+      "display": "largo"
+    },
+    {
+      "code": "16",
+      "display": "litoranea"
+    },
+    {
+      "code": "17",
+      "display": "lungargine"
+    },
+    {
+      "code": "18",
+      "display": "lungofiume"
+    },
+    {
+      "code": "19",
+      "display": "lungolago"
+    },
+    {
+      "code": "20",
+      "display": "lungomare"
+    },
+    {
+      "code": "21",
+      "display": "lungoparco"
+    },
+    {
+      "code": "22",
+      "display": "lungotorrente"
+    },
+    {
+      "code": "23",
+      "display": "molo"
+    },
+    {
+      "code": "24",
+      "display": "parcheggio"
+    },
+    {
+      "code": "25",
+      "display": "passaggio"
+    },
+    {
+      "code": "26",
+      "display": "passeggiata"
+    },
+    {
+      "code": "27",
+      "display": "percorso ciclabile"
+    },
+    {
+      "code": "28",
+      "display": "percorso ciclopedonale"
+    },
+    {
+      "code": "29",
+      "display": "percorso pedonale"
+    },
+    {
+      "code": "30",
+      "display": "piazza"
+    },
+    {
+      "code": "31",
+      "display": "piazzale"
+    },
+    {
+      "code": "32",
+      "display": "piazzetta"
+    },
+    {
+      "code": "33",
+      "display": "pista ciclabile"
+    },
+    {
+      "code": "34",
+      "display": "ponte"
+    },
+    {
+      "code": "35",
+      "display": "raccordo"
+    },
+    {
+      "code": "36",
+      "display": "rampa"
+    },
+    {
+      "code": "37",
+      "display": "ronco"
+    },
+    {
+      "code": "38",
+      "display": "rotatoria"
+    },
+    {
+      "code": "39",
+      "display": "rotonda"
+    },
+    {
+      "code": "40",
+      "display": "salita"
+    },
+    {
+      "code": "41",
+      "display": "scalinata"
+    },
+    {
+      "code": "42",
+      "display": "scesa"
+    },
+    {
+      "code": "43",
+      "display": "sentiero"
+    },
+    {
+      "code": "44",
+      "display": "slargo"
+    },
+    {
+      "code": "45",
+      "display": "sottopasso"
+    },
+    {
+      "code": "46",
+      "display": "sovrappasso"
+    },
+    {
+      "code": "47",
+      "display": "spiazzo"
+    },
+    {
+      "code": "48",
+      "display": "strada"
+    },
+    {
+      "code": "49",
+      "display": "strada antica"
+    },
+    {
+      "code": "50",
+      "display": "strada comunale"
+    },
+    {
+      "code": "51",
+      "display": "strada consortile"
+    },
+    {
+      "code": "52",
+      "display": "strada nuova"
+    },
+    {
+      "code": "53",
+      "display": "strada panoramica"
+    },
+    {
+      "code": "54",
+      "display": "strada poderale"
+    },
+    {
+      "code": "55",
+      "display": "strada privata"
+    },
+    {
+      "code": "56",
+      "display": "strada provinciale"
+    },
+    {
+      "code": "57",
+      "display": "strada regionale"
+    },
+    {
+      "code": "58",
+      "display": "strada statale"
+    },
+    {
+      "code": "59",
+      "display": "strada vecchia"
+    },
+    {
+      "code": "60",
+      "display": "strada vicinale"
+    },
+    {
+      "code": "61",
+      "display": "stradella"
+    },
+    {
+      "code": "62",
+      "display": "stradello"
+    },
+    {
+      "code": "63",
+      "display": "stradone"
+    },
+    {
+      "code": "64",
+      "display": "tangenziale"
+    },
+    {
+      "code": "65",
+      "display": "traversa"
+    },
+    {
+      "code": "66",
+      "display": "traversa privata"
+    },
+    {
+      "code": "67",
+      "display": "via"
+    },
+    {
+      "code": "68",
+      "display": "via antica"
+    },
+    {
+      "code": "69",
+      "display": "via comunale"
+    },
+    {
+      "code": "70",
+      "display": "via nazionale"
+    },
+    {
+      "code": "71",
+      "display": "via nuova"
+    },
+    {
+      "code": "72",
+      "display": "via panoramica"
+    },
+    {
+      "code": "73",
+      "display": "via privata"
+    },
+    {
+      "code": "74",
+      "display": "via provinciale"
+    },
+    {
+      "code": "75",
+      "display": "via vecchia"
+    },
+    {
+      "code": "76",
+      "display": "viale"
+    },
+    {
+      "code": "77",
+      "display": "vialetto"
+    },
+    {
+      "code": "78",
+      "display": "vico"
+    },
+    {
+      "code": "79",
+      "display": "vico chiuso"
+    },
+    {
+      "code": "80",
+      "display": "vico cieco"
+    },
+    {
+      "code": "81",
+      "display": "vico privato"
+    },
+    {
+      "code": "82",
+      "display": "vicoletto"
+    },
+    {
+      "code": "83",
+      "display": "vicolo"
+    },
+    {
+      "code": "84",
+      "display": "vicolo chiuso"
+    },
+    {
+      "code": "85",
+      "display": "vicolo cieco"
+    },
+    {
+      "code": "86",
+      "display": "vicolo privato"
+    },
+    {
+      "code": "87",
+      "display": "viottolo"
+    }
+  ]
+}

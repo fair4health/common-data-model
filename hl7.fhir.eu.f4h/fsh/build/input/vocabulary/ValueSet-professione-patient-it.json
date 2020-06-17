@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ProfessionePaziente",
+  "id": "professione-patient-it",
+  "title": "Classificazione delle professioni",
+  "description": "Classificazione delle professioni",
+  "version": "0.1.0",
+  "url": "http://hl7.it/fhir/ValueSet/professione-patient-it",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.it/fhir/CodeSystem/professioni-ISTAT"
+      }
+    ]
+  }
+}

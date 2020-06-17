@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../fhir-all-xsd/structuredefinition.xsd">
+	<id value="Patient"/>
+	<url value="http://hl7.eu/fhir/f4h/StructureDefinition/Patient"/>
+	<name value="Patient"/>
+	<title value="Opt-1: Patient"/>
+	<status value="draft"/>
+	<description value="Minimal set of Patient data used by the FAIR4Health project."/>
+	<kind value="logical"/>
+	<abstract value="true"/>
+	<type value="Patient"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+	<derivation value="specialization"/>
+	<differential>
+		<element id="Patient">
+			<path value="Patient"/>
+			<short value="Patient F4H Attributes"/>
+			<definition value="Non-exhaustive, collection of data used for administration, identification, assurance of identity and preferences within a patient summary."/>
+			<min value="1"/>
+			<max value="*"/>
+		</element>
+		<element id="Patient.healthcareIdentifier">
+			<path value="Patient.healthcareIdentifier"/>
+			<short value="Patient identifier"/>
+			<definition value="Note, Patient Number is often used as a synonym, albeit that the identifier is not necessarily numeric; some jurisdictions use the Social Security Number as a healthcare identifier."/>
+			<min value="1"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Patient.countryCode">
+			<path value="Patient.countryCode"/>
+			<short value="ISO alpha-2 country code"/>
+			<definition value="DEFINITION."/>
+			<min value="1"/>
+			<max value="*"/>
+			<type>
+				<code value="code"/>
+			</type>
+		</element>
+		<!-- <element id="Patient.name">
+			<path value="Patient.name"/>
+			<short value="Patient name"/>
+			<definition value="DEFINITION."/>
+			<min value="1"/>
+			<max value="*"/>
+			<type>
+				<code value="HumanName"/>
+			</type>
+		</element>
+		<element id="Patient.name.family">
+			<path value="Patient.name.family"/>
+			<short value="Patient’s family name"/>
+			<definition value="DEFINITION."/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Patient.name.given">
+			<path value="Patient.name.given"/>
+			<short value="Patient’s given name"/>
+			<definition value="DEFINITION."/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element> -->
+		<element id="Patient.gender">
+			<path value="Patient.gender"/>
+			<short value="Administrative gender"/>
+			<definition value="Some countries require ‘gender’ as part of their identification of the Patient. Administrative gender SHALL be specified from a value set including at least ‘Male’, ‘Female’. It SHALL not be used to record a person’s sex. 
+   Notes: This item should not be used to record the ‘sex’ of a person. ‘Sex’ is a clinical term but not always provided or collected at source. It may be included as an optional attribute in the next iteration of this standard."/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="Coding"/>
+			</type>
+		</element>
+		<element id="Patient.dateOfBirth">
+			<path value="Patient.dateOfBirth"/>
+			<short value="Date of birth"/>
+			<definition value="DEFINITION."/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="date"/>
+			</type>
+		</element>
+	</differential>
+</StructureDefinition>

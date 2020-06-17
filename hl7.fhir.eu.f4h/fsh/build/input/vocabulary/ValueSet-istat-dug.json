@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "DenominazioniUrbanisticheGeneriche",
+  "id": "istat-dug",
+  "title": "Registro delle Denominazioni Urbanistiche Generiche (DUG)",
+  "description": "Registro delle Denominazioni Urbanistiche Generiche (DUG)",
+  "version": "0.1.0",
+  "url": "http://hl7.it/fhir/ValueSet/istat-dug",
+  "compose": {
+    "include": [
+      {
+        "system": "http://registry.geodati.gov.it/dug"
+      }
+    ]
+  }
+}

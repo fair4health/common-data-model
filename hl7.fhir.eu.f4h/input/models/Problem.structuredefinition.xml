@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../fhir-all-xsd/structuredefinition.xsd">
+	<id value="Problem"/>
+	<url value="http://hl7.eu/fhir/f4h/StructureDefinition/Problem"/>
+	<name value="Problem"/>
+	<title value="Opt-1: Problem"/>
+	<status value="draft"/>
+	<description value="Minimal set of Problem data used by the FAIR4Health project."/>
+	<kind value="logical"/>
+	<abstract value="true"/>
+	<type value="Problem"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+	<derivation value="specialization"/>
+	<differential>
+		<element id="Problem">
+			<path value="Problem"/>
+			<short value="Problem F4H Attributes"/>
+			<definition value="Problem F4H Attributes"/>
+			<min value="1"/>
+			<max value="*"/>
+		</element>
+		<element id="Problem.identifier">
+			<path value="Problem.identifier"/>
+			<short value="Problem identifier"/>
+			<definition value="Problem identifier"/>
+			<min value="1"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Problem.encounterID">
+			<path value="Problem.encounterID"/>
+			<short value="Encounter identifier"/>
+			<definition value="Encounter identifier"/>
+			<min value="1"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Problem.subjectID">
+			<path value="Problem.subjectID"/>
+			<short value="Patient identifier"/>
+			<definition value="Patient identifier"/>
+			<min value="1"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Problem.date">
+			<path value="Problem.date"/>
+			<short value="Problem date"/>
+			<definition value="Problem date"/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="date"/>
+			</type>
+		</element>
+		<element id="Problem.code">
+			<path value="Problem.code"/>
+			<short value="Problem code"/>
+			<definition value="Problem code"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="code"/>
+			</type>
+		</element>
+		<element id="Problem.codeDisplay">
+			<path value="Problem.codeDisplay"/>
+			<short value="Problem code (short description)"/>
+			<definition value="Problem code (short description)"/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Problem.listPosition">
+			<path value="Problem.listPosition"/>
+			<short value="Problem list position"/>
+			<definition value="Problem list position"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="positiveInt"/>
+			</type>
+		</element>
+	</differential>
+</StructureDefinition>
