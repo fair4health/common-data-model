@@ -18,7 +18,7 @@
    <title value="FAIR4Health FHIR Implementation Guide"/>
    <status value="draft"/>
    <experimental value="false"/>
-   <date value="2020-06-17T10:16:24+02:00"/>
+   <date value="2020-07-14T15:21:25+02:00"/>
    <publisher value="Fair4Health Project"/>
    <contact>
       <telecom>
@@ -593,6 +593,10 @@
       <parameter>
          <code value="path-resource"/>
          <value value="input/testing"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/history"/>
       </parameter>
       <parameter>
          <code value="path-pages"/>
