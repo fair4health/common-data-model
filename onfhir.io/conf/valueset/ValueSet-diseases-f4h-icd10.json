@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "VsDiseasesF4hIcd10",
+  "id": "diseases-f4h-icd10",
+  "title": "Diseases F4H Use Cases 1 and 2 (ICD 10)",
+  "description": "Diseases to be tracked for the FAIR4Health use cases 1 and 2. This value set is based on WHO ICD10",
+  "version": "0.1.0",
+  "url": "http://hl7.eu/fhir/f4h/ValueSet/diseases-f4h-icd10",
+  "copyright": "Licensing note: WHO encourages the development of software tools and applications using WHO classifications for use by the wider medical community and researchers, as long as those products provide a range of functions, including search and retrieval of classification terms. Companies and organizations wishing to obtain a licence are asked to complete the application form so that the proposed use of the classifications is evaluated and eventually a licence proposed.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10",
+        "concept": [
+          {
+            "code": "I50",
+            "display": "Heart Failure"
+          },
+          {
+            "code": "I10",
+            "display": "Hypertension"
+          },
+          {
+            "code": "N18",
+            "display": "Chronic Kidney Disease"
+          }
+        ]
+      }
+    ]
+  }
+}
