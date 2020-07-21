@@ -1277,7 +1277,7 @@
         ],
         "isSummary": true,
         "binding": {
-          "strength": "example",
+          "strength": "required",
           "valueSet": "http://hl7.eu/fhir/f4h/ValueSet/diseases-f4h-sct"
         },
         "mapping": [
@@ -1729,7 +1729,7 @@
         ],
         "isSummary": true,
         "binding": {
-          "strength": "example",
+          "strength": "required",
           "valueSet": "http://hl7.eu/fhir/f4h/ValueSet/diseases-f4h-icd10"
         },
         "mapping": [
@@ -3561,7 +3561,7 @@
         "short": "SNOMED CT concepts",
         "max": "1",
         "binding": {
-          "strength": "example",
+          "strength": "required",
           "valueSet": "http://hl7.eu/fhir/f4h/ValueSet/diseases-f4h-sct"
         }
       },
@@ -3577,7 +3577,7 @@
         "short": "SNOMED CT concepts",
         "max": "1",
         "binding": {
-          "strength": "example",
+          "strength": "required",
           "valueSet": "http://hl7.eu/fhir/f4h/ValueSet/diseases-f4h-icd10"
         }
       },

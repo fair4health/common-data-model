@@ -12,5 +12,5 @@ RUN chown root:root /fhir/docker-entrypoint.sh
 RUN chmod +x /fhir/docker-entrypoint.sh
 
 
-EXPOSE 8282
+EXPOSE 8080
 ENTRYPOINT ["/fhir/docker-entrypoint.sh"]
