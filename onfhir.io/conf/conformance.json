@@ -44,7 +44,6 @@
         "resource": [{
             "type": "AllergyIntolerance",
             "profile": "http://hl7.org/fhir/StructureDefinition/AllergyIntolerance",
-            "supportedProfile": ["http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips"],
             "interaction": [{
                 "code": "read",
                 "documentation": "Implemented per the specification (or Insert other doco here)"
@@ -453,7 +452,6 @@
         }, {
             "type": "Composition",
             "profile": "http://hl7.org/fhir/StructureDefinition/Composition",
-            "supportedProfile": ["http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips"],
             "interaction": [{
                 "code": "read",
                 "documentation": "Implemented per the specification (or Insert other doco here)"
@@ -586,171 +584,375 @@
                 "documentation": "preliminary | final | amended | entered-in-error"
             }]
         }, {
-          "type" : "CodeSystem",
-          "profile" : "http://hl7.org/fhir/StructureDefinition/CodeSystem",
-          "interaction" : [{
-            "code" : "read",
-            "documentation" : "Implemented per the specification (or Insert other doco here)"
-          },
-          {
-            "code" : "vread",
-            "documentation" : "Implemented per the specification (or Insert other doco here)"
-          },
-          {
-            "code" : "update",
-            "documentation" : "Implemented per the specification (or Insert other doco here)"
-          },
-          {
-            "code" : "delete",
-            "documentation" : "Implemented per the specification (or Insert other doco here)"
-          },
-          {
-            "code" : "history-instance",
-            "documentation" : "Implemented per the specification (or Insert other doco here)"
-          },
-          {
-            "code" : "history-type",
-            "documentation" : "Implemented per the specification (or Insert other doco here)"
-          },
-          {
-            "code" : "create",
-            "documentation" : "Implemented per the specification (or Insert other doco here)"
-          },
-          {
-            "code" : "search-type",
-            "documentation" : "Implemented per the specification (or Insert other doco here)"
-          }],
-          "conditionalCreate" : true,
-          "conditionalUpdate" : true,
-          "conditionalDelete" : "multiple",
-          "referencePolicy" : ["literal",
-          "logical"],
-          "searchInclude" : ["CodeSystem.supplements"],
-          "searchRevInclude" : ["CodeSystem.supplements"],
-          "searchParam" : [{
-            "name" : "date",
-            "definition" : "http://hl7.org/fhir/SearchParameter/conformance-date",
-            "type" : "date",
-            "documentation" : "The code system publication date"
-          },
-          {
-            "name" : "identifier",
-            "definition" : "http://hl7.org/fhir/SearchParameter/conformance-identifier",
-            "type" : "token",
-            "documentation" : "External identifier for the code system"
-          },
-          {
-            "name" : "code",
-            "definition" : "http://hl7.org/fhir/SearchParameter/CodeSystem-code",
-            "type" : "token",
-            "documentation" : "A code defined in the code system"
-          },
-          {
-            "name" : "context-type-value",
-            "definition" : "http://hl7.org/fhir/SearchParameter/conformance-context-type-value",
-            "type" : "composite",
-            "documentation" : "A use context type and value assigned to the code system"
-          },
-          {
-            "name" : "content-mode",
-            "definition" : "http://hl7.org/fhir/SearchParameter/CodeSystem-content-mode",
-            "type" : "token",
-            "documentation" : "not-present | example | fragment | complete | supplement"
-          },
-          {
-            "name" : "jurisdiction",
-            "definition" : "http://hl7.org/fhir/SearchParameter/conformance-jurisdiction",
-            "type" : "token",
-            "documentation" : "Intended jurisdiction for the code system"
-          },
-          {
-            "name" : "description",
-            "definition" : "http://hl7.org/fhir/SearchParameter/conformance-description",
-            "type" : "string",
-            "documentation" : "The description of the code system"
-          },
-          {
-            "name" : "context-type",
-            "definition" : "http://hl7.org/fhir/SearchParameter/conformance-context-type",
-            "type" : "token",
-            "documentation" : "A type of use context assigned to the code system"
-          },
-          {
-            "name" : "language",
-            "definition" : "http://hl7.org/fhir/SearchParameter/CodeSystem-language",
-            "type" : "token",
-            "documentation" : "A language in which a designation is provided"
-          },
-          {
-            "name" : "title",
-            "definition" : "http://hl7.org/fhir/SearchParameter/conformance-title",
-            "type" : "string",
-            "documentation" : "The human-friendly name of the code system"
-          },
-          {
-            "name" : "version",
-            "definition" : "http://hl7.org/fhir/SearchParameter/conformance-version",
-            "type" : "token",
-            "documentation" : "The business version of the code system"
-          },
-          {
-            "name" : "url",
-            "definition" : "http://hl7.org/fhir/SearchParameter/conformance-url",
-            "type" : "uri",
-            "documentation" : "The uri that identifies the code system"
-          },
-          {
-            "name" : "context-quantity",
-            "definition" : "http://hl7.org/fhir/SearchParameter/conformance-context-quantity",
-            "type" : "quantity",
-            "documentation" : "A quantity- or range-valued use context assigned to the code system"
-          },
-          {
-            "name" : "supplements",
-            "definition" : "http://hl7.org/fhir/SearchParameter/CodeSystem-supplements",
-            "type" : "reference",
-            "documentation" : "Find code system supplements for the referenced code system"
-          },
-          {
-            "name" : "system",
-            "definition" : "http://hl7.org/fhir/SearchParameter/CodeSystem-system",
-            "type" : "uri",
-            "documentation" : "The system for any codes defined by this code system (same as 'url')"
-          },
-          {
-            "name" : "name",
-            "definition" : "http://hl7.org/fhir/SearchParameter/conformance-name",
-            "type" : "string",
-            "documentation" : "Computationally friendly name of the code system"
-          },
-          {
-            "name" : "context",
-            "definition" : "http://hl7.org/fhir/SearchParameter/conformance-context",
-            "type" : "token",
-            "documentation" : "A use context assigned to the code system"
-          },
-          {
-            "name" : "publisher",
-            "definition" : "http://hl7.org/fhir/SearchParameter/conformance-publisher",
-            "type" : "string",
-            "documentation" : "Name of the publisher of the code system"
-          },
-          {
-            "name" : "context-type-quantity",
-            "definition" : "http://hl7.org/fhir/SearchParameter/conformance-context-type-quantity",
-            "type" : "composite",
-            "documentation" : "A use context type and quantity- or range-based value assigned to the code system"
-          },
-          {
-            "name" : "status",
-            "definition" : "http://hl7.org/fhir/SearchParameter/conformance-status",
-            "type" : "token",
-            "documentation" : "The current status of the code system"
-          }]
+            "type" : "CodeSystem",
+            "profile" : "http://hl7.org/fhir/StructureDefinition/CodeSystem",
+            "interaction" : [{
+                "code" : "read",
+                "documentation" : "Implemented per the specification (or Insert other doco here)"
+            },
+                {
+                    "code" : "vread",
+                    "documentation" : "Implemented per the specification (or Insert other doco here)"
+                },
+                {
+                    "code" : "update",
+                    "documentation" : "Implemented per the specification (or Insert other doco here)"
+                },
+                {
+                    "code" : "delete",
+                    "documentation" : "Implemented per the specification (or Insert other doco here)"
+                },
+                {
+                    "code" : "history-instance",
+                    "documentation" : "Implemented per the specification (or Insert other doco here)"
+                },
+                {
+                    "code" : "history-type",
+                    "documentation" : "Implemented per the specification (or Insert other doco here)"
+                },
+                {
+                    "code" : "create",
+                    "documentation" : "Implemented per the specification (or Insert other doco here)"
+                },
+                {
+                    "code" : "search-type",
+                    "documentation" : "Implemented per the specification (or Insert other doco here)"
+                }],
+            "conditionalCreate" : true,
+            "conditionalUpdate" : true,
+            "conditionalDelete" : "multiple",
+            "referencePolicy" : ["literal",
+                "logical"],
+            "searchInclude" : ["CodeSystem.supplements"],
+            "searchRevInclude" : ["CodeSystem.supplements"],
+            "searchParam" : [{
+                "name" : "date",
+                "definition" : "http://hl7.org/fhir/SearchParameter/conformance-date",
+                "type" : "date",
+                "documentation" : "The code system publication date"
+            },
+                {
+                    "name" : "identifier",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/conformance-identifier",
+                    "type" : "token",
+                    "documentation" : "External identifier for the code system"
+                },
+                {
+                    "name" : "code",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/CodeSystem-code",
+                    "type" : "token",
+                    "documentation" : "A code defined in the code system"
+                },
+                {
+                    "name" : "context-type-value",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/conformance-context-type-value",
+                    "type" : "composite",
+                    "documentation" : "A use context type and value assigned to the code system"
+                },
+                {
+                    "name" : "content-mode",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/CodeSystem-content-mode",
+                    "type" : "token",
+                    "documentation" : "not-present | example | fragment | complete | supplement"
+                },
+                {
+                    "name" : "jurisdiction",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/conformance-jurisdiction",
+                    "type" : "token",
+                    "documentation" : "Intended jurisdiction for the code system"
+                },
+                {
+                    "name" : "description",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/conformance-description",
+                    "type" : "string",
+                    "documentation" : "The description of the code system"
+                },
+                {
+                    "name" : "context-type",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/conformance-context-type",
+                    "type" : "token",
+                    "documentation" : "A type of use context assigned to the code system"
+                },
+                {
+                    "name" : "language",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/CodeSystem-language",
+                    "type" : "token",
+                    "documentation" : "A language in which a designation is provided"
+                },
+                {
+                    "name" : "title",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/conformance-title",
+                    "type" : "string",
+                    "documentation" : "The human-friendly name of the code system"
+                },
+                {
+                    "name" : "version",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/conformance-version",
+                    "type" : "token",
+                    "documentation" : "The business version of the code system"
+                },
+                {
+                    "name" : "url",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/conformance-url",
+                    "type" : "uri",
+                    "documentation" : "The uri that identifies the code system"
+                },
+                {
+                    "name" : "context-quantity",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/conformance-context-quantity",
+                    "type" : "quantity",
+                    "documentation" : "A quantity- or range-valued use context assigned to the code system"
+                },
+                {
+                    "name" : "supplements",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/CodeSystem-supplements",
+                    "type" : "reference",
+                    "documentation" : "Find code system supplements for the referenced code system"
+                },
+                {
+                    "name" : "system",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/CodeSystem-system",
+                    "type" : "uri",
+                    "documentation" : "The system for any codes defined by this code system (same as 'url')"
+                },
+                {
+                    "name" : "name",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/conformance-name",
+                    "type" : "string",
+                    "documentation" : "Computationally friendly name of the code system"
+                },
+                {
+                    "name" : "context",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/conformance-context",
+                    "type" : "token",
+                    "documentation" : "A use context assigned to the code system"
+                },
+                {
+                    "name" : "publisher",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/conformance-publisher",
+                    "type" : "string",
+                    "documentation" : "Name of the publisher of the code system"
+                },
+                {
+                    "name" : "context-type-quantity",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/conformance-context-type-quantity",
+                    "type" : "composite",
+                    "documentation" : "A use context type and quantity- or range-based value assigned to the code system"
+                },
+                {
+                    "name" : "status",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/conformance-status",
+                    "type" : "token",
+                    "documentation" : "The current status of the code system"
+                }]
+        }, {
+            "type" : "ConceptMap",
+            "profile" : "http://hl7.org/fhir/StructureDefinition/ConceptMap",
+            "interaction" : [{
+                "code" : "read",
+                "documentation" : "Implemented per the specification (or Insert other doco here)"
+            },
+                {
+                    "code" : "vread",
+                    "documentation" : "Implemented per the specification (or Insert other doco here)"
+                },
+                {
+                    "code" : "update",
+                    "documentation" : "Implemented per the specification (or Insert other doco here)"
+                },
+                {
+                    "code" : "delete",
+                    "documentation" : "Implemented per the specification (or Insert other doco here)"
+                },
+                {
+                    "code" : "history-instance",
+                    "documentation" : "Implemented per the specification (or Insert other doco here)"
+                },
+                {
+                    "code" : "history-type",
+                    "documentation" : "Implemented per the specification (or Insert other doco here)"
+                },
+                {
+                    "code" : "create",
+                    "documentation" : "Implemented per the specification (or Insert other doco here)"
+                },
+                {
+                    "code" : "search-type",
+                    "documentation" : "Implemented per the specification (or Insert other doco here)"
+                }],
+            "conditionalCreate" : true,
+            "conditionalUpdate" : true,
+            "conditionalDelete" : "multiple",
+            "referencePolicy" : ["literal",
+                "logical"],
+            "searchInclude" : ["ConceptMap.other",
+                "ConceptMap.source",
+                "ConceptMap.source-uri",
+                "ConceptMap.target-uri",
+                "ConceptMap.target"],
+            "searchRevInclude" : ["ConceptMap.other"],
+            "searchParam" : [{
+                "name" : "date",
+                "definition" : "http://hl7.org/fhir/SearchParameter/conformance-date",
+                "type" : "date",
+                "documentation" : "The concept map publication date"
+            },
+                {
+                    "name" : "other",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/ConceptMap-other",
+                    "type" : "reference",
+                    "documentation" : "canonical reference to an additional ConceptMap to use for mapping if the source concept is unmapped"
+                },
+                {
+                    "name" : "context-type-value",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/conformance-context-type-value",
+                    "type" : "composite",
+                    "documentation" : "A use context type and value assigned to the concept map"
+                },
+                {
+                    "name" : "target-system",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/ConceptMap-target-system",
+                    "type" : "uri",
+                    "documentation" : "Target system that the concepts are to be mapped to"
+                },
+                {
+                    "name" : "dependson",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/ConceptMap-dependson",
+                    "type" : "uri",
+                    "documentation" : "Reference to property mapping depends on"
+                },
+                {
+                    "name" : "jurisdiction",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/conformance-jurisdiction",
+                    "type" : "token",
+                    "documentation" : "Intended jurisdiction for the concept map"
+                },
+                {
+                    "name" : "description",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/conformance-description",
+                    "type" : "string",
+                    "documentation" : "The description of the concept map"
+                },
+                {
+                    "name" : "context-type",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/conformance-context-type",
+                    "type" : "token",
+                    "documentation" : "A type of use context assigned to the concept map"
+                },
+                {
+                    "name" : "source",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/ConceptMap-source",
+                    "type" : "reference",
+                    "documentation" : "The source value set that contains the concepts that are being mapped"
+                },
+                {
+                    "name" : "title",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/conformance-title",
+                    "type" : "string",
+                    "documentation" : "The human-friendly name of the concept map"
+                },
+                {
+                    "name" : "context-quantity",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/conformance-context-quantity",
+                    "type" : "quantity",
+                    "documentation" : "A quantity- or range-valued use context assigned to the concept map"
+                },
+                {
+                    "name" : "source-uri",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/ConceptMap-source-uri",
+                    "type" : "reference",
+                    "documentation" : "The source value set that contains the concepts that are being mapped"
+                },
+                {
+                    "name" : "context",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/conformance-context",
+                    "type" : "token",
+                    "documentation" : "A use context assigned to the concept map"
+                },
+                {
+                    "name" : "context-type-quantity",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/conformance-context-type-quantity",
+                    "type" : "composite",
+                    "documentation" : "A use context type and quantity- or range-based value assigned to the concept map"
+                },
+                {
+                    "name" : "source-system",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/ConceptMap-source-system",
+                    "type" : "uri",
+                    "documentation" : "Source system where concepts to be mapped are defined"
+                },
+                {
+                    "name" : "target-code",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/ConceptMap-target-code",
+                    "type" : "token",
+                    "documentation" : "Code that identifies the target element"
+                },
+                {
+                    "name" : "target-uri",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/ConceptMap-target-uri",
+                    "type" : "reference",
+                    "documentation" : "The target value set which provides context for the mappings"
+                },
+                {
+                    "name" : "identifier",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/conformance-identifier",
+                    "type" : "token",
+                    "documentation" : "External identifier for the concept map"
+                },
+                {
+                    "name" : "product",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/ConceptMap-product",
+                    "type" : "uri",
+                    "documentation" : "Reference to property mapping depends on"
+                },
+                {
+                    "name" : "version",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/conformance-version",
+                    "type" : "token",
+                    "documentation" : "The business version of the concept map"
+                },
+                {
+                    "name" : "url",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/conformance-url",
+                    "type" : "uri",
+                    "documentation" : "The uri that identifies the concept map"
+                },
+                {
+                    "name" : "target",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/ConceptMap-target",
+                    "type" : "reference",
+                    "documentation" : "The target value set which provides context for the mappings"
+                },
+                {
+                    "name" : "source-code",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/ConceptMap-source-code",
+                    "type" : "token",
+                    "documentation" : "Identifies element being mapped"
+                },
+                {
+                    "name" : "name",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/conformance-name",
+                    "type" : "string",
+                    "documentation" : "Computationally friendly name of the concept map"
+                },
+                {
+                    "name" : "publisher",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/conformance-publisher",
+                    "type" : "string",
+                    "documentation" : "Name of the publisher of the concept map"
+                },
+                {
+                    "name" : "status",
+                    "definition" : "http://hl7.org/fhir/SearchParameter/conformance-status",
+                    "type" : "token",
+                    "documentation" : "The current status of the concept map"
+                }]
         }, {
             "type": "Condition",
             "profile": "http://hl7.org/fhir/StructureDefinition/Condition",
-            "supportedProfile": ["http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"],
+            "supportedProfile": [
+                "http://hl7.eu/fhir/f4h/StructureDefinition/Condition-eu-f4h"
+            ],
             "interaction": [{
                 "code": "read",
                 "documentation": "Implemented per the specification (or Insert other doco here)"
@@ -909,7 +1111,6 @@
         }, {
             "type": "Device",
             "profile": "http://hl7.org/fhir/StructureDefinition/Device",
-            "supportedProfile": ["http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips"],
             "interaction": [{
                 "code": "read",
                 "documentation": "Implemented per the specification (or Insert other doco here)"
@@ -1099,7 +1300,6 @@
         }, {
             "type": "DeviceUseStatement",
             "profile": "http://hl7.org/fhir/StructureDefinition/DeviceUseStatement",
-            "supportedProfile": ["http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips"],
             "interaction": [{
                 "code": "read",
                 "documentation": "Implemented per the specification (or Insert other doco here)"
@@ -1159,7 +1359,6 @@
         }, {
             "type": "DiagnosticReport",
             "profile": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
-            "supportedProfile": ["http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips"],
             "interaction": [{
                 "code": "read",
                 "documentation": "Implemented per the specification (or Insert other doco here)"
@@ -1290,6 +1489,9 @@
         }, {
             "type": "Encounter",
             "profile": "http://hl7.org/fhir/StructureDefinition/Encounter",
+            "supportedProfile": [
+                "http://hl7.eu/fhir/f4h/StructureDefinition/Encounter-eu-f4h"
+            ],
             "interaction": [{
                 "code": "read",
                 "documentation": "Implemented per the specification (or Insert other doco here)"
@@ -1486,7 +1688,6 @@
         }, {
             "type": "ImagingStudy",
             "profile": "http://hl7.org/fhir/StructureDefinition/ImagingStudy",
-            "supportedProfile": ["http://hl7.org/fhir/uv/ips/StructureDefinition/ImagingStudy-uv-ips"],
             "interaction": [{
                 "code": "read",
                 "documentation": "Implemented per the specification (or Insert other doco here)"
@@ -1621,7 +1822,6 @@
         }, {
             "type": "Immunization",
             "profile": "http://hl7.org/fhir/StructureDefinition/Immunization",
-            "supportedProfile": ["http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"],
             "interaction": [{
                 "code": "read",
                 "documentation": "Implemented per the specification (or Insert other doco here)"
@@ -1750,7 +1950,6 @@
         }, {
             "type": "Medication",
             "profile": "http://hl7.org/fhir/StructureDefinition/Medication",
-            "supportedProfile": ["http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"],
             "interaction": [{
                 "code": "read",
                 "documentation": "Implemented per the specification (or Insert other doco here)"
@@ -1978,7 +2177,9 @@
         }, {
             "type": "MedicationStatement",
             "profile": "http://hl7.org/fhir/StructureDefinition/MedicationStatement",
-            "supportedProfile": ["http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"],
+            "supportedProfile": [
+                "http://hl7.eu/fhir/f4h/StructureDefinition/MedicationStatement-eu-f4h"
+            ],
             "interaction": [{
                 "code": "read",
                 "documentation": "Implemented per the specification (or Insert other doco here)"
@@ -2080,19 +2281,9 @@
         }, {
             "type": "Observation",
             "profile": "http://hl7.org/fhir/StructureDefinition/Observation",
-            "supportedProfile": ["http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips",
-                "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-imaging-uv-ips",
-                "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-laboratory-uv-ips",
-                "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-media-uv-ips",
-                "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-member-imaging-uv-ips",
-                "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-member-laboratory-uv-ips",
-                "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-member-pathology-uv-ips",
-                "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pathology-uv-ips",
-                "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-edd-uv-ips",
-                "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-outcome-uv-ips",
-                "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips",
-                "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips",
-                "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-uv-ips"
+            "supportedProfile": [
+                "http://hl7.eu/fhir/f4h/StructureDefinition/Observation-eu-f4h",
+                "http://hl7.eu/fhir/f4h/StructureDefinition/Observation-lab-eu-f4h"
             ],
             "interaction": [{
                 "code": "read",
@@ -2346,9 +2537,6 @@
         }, {
             "type": "Organization",
             "profile": "http://hl7.org/fhir/StructureDefinition/Organization",
-            "supportedProfile": ["http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-laboratory-uv-ips",
-                "http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-observation-uv-ips"
-            ],
             "interaction": [{
                 "code": "read",
                 "documentation": "Implemented per the specification (or Insert other doco here)"
@@ -2559,7 +2747,9 @@
         }, {
             "type": "Patient",
             "profile": "http://hl7.org/fhir/StructureDefinition/Patient",
-            "supportedProfile": ["http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"],
+            "supportedProfile": [
+                "http://hl7.eu/fhir/f4h/StructureDefinition/Patient-eu-f4h"
+            ],
             "interaction": [{
                 "code": "read",
                 "documentation": "Implemented per the specification (or Insert other doco here)"
@@ -2876,7 +3066,6 @@
         }, {
             "type": "Practitioner",
             "profile": "http://hl7.org/fhir/StructureDefinition/Practitioner",
-			"supportedProfile": ["http://hl7.org/fhir/uv/ips/StructureDefinition/Practitioner-uv-ips"],
             "interaction": [{
                 "code": "read",
                 "documentation": "Implemented per the specification (or Insert other doco here)"
@@ -3118,7 +3307,6 @@
         }, {
             "type": "Procedure",
             "profile": "http://hl7.org/fhir/StructureDefinition/Procedure",
-			"supportedProfile": ["http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"],
             "interaction": [{
                 "code": "read",
                 "documentation": "Implemented per the specification (or Insert other doco here)"
@@ -3653,7 +3841,7 @@
                 "documentation": "The current status of the value set"
             }]
         }],
-		"interaction": [{
+        "interaction": [{
             "code": "transaction",
             "documentation": "Implemented per the specification (or Insert other doco here)"
         }, {
@@ -3661,6 +3849,11 @@
             "documentation": "Implemented per the specification (or Insert other doco here)"
         }],
         "searchParam": [{
+            "name": "_profile",
+            "definition": "http://hl7.org/fhir/SearchParameter/Resource-profile",
+            "type": "reference",
+            "documentation": "Profiles this resource claims to conform to"
+        },{
             "name": "_text",
             "definition": "http://hl7.org/fhir/SearchParameter/DomainResource-text",
             "type": "string",
@@ -3705,6 +3898,12 @@
             "definition": "http://hl7.org/fhir/SearchParameter/Resource-elements",
             "type": "string",
             "documentation": "What kind of information to return"
-        }]
+        }],
+        "operation": [
+            {
+                "name": "validate",
+                "definition": "http://hl7.org/fhir/OperationDefinition/Resource-validate"
+            }
+        ]
     }]
 }
