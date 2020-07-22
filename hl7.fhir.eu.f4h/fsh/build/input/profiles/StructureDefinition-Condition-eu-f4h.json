@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "Condition-eu-f4h",
-  "url": "http://hl7.eu/fhir/f4h/StructureDefinition/Condition-eu-f4h",
+  "url": "http://hl7.eu/fhir/f4h/ig/StructureDefinition/Condition-eu-f4h",
   "version": "0.1.0",
   "name": "ConditionF4h",
   "title": "Condition (Fair4Health)",
@@ -73,7 +73,7 @@
         },
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.eu/fhir/f4h/ValueSet/diseases-f4h-icd10"
+          "valueSet": "http://hl7.eu/fhir/f4h/ig/ValueSet/diseases-f4h-icd10"
         }
       },
       {

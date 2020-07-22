@@ -1,0 +1,172 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "DiseasesF4hSnomed",
+  "id": "diseases-f4h-sct",
+  "title": "Diseases F4H Use Cases 1 and 2 (SNOMED CT)",
+  "description": "Diseases to be tracked for the FAIR4Health use cases 1 and 2. This value set is based on SNOMED Clinical Terms® (SNOMED CT®)",
+  "version": "0.1.0",
+  "url": "http://hl7.eu/fhir/f4h/ig/ValueSet/diseases-f4h-sct",
+  "copyright": "Licensing note: This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "84114007",
+            "display": "Heart failure (disorder)"
+          },
+          {
+            "code": "53741008",
+            "display": "Coronary arteriosclerosis (disorder)"
+          },
+          {
+            "code": "38341003",
+            "display": "Hypertensive disorder, systemic arterial (disorder)"
+          },
+          {
+            "code": "49436004",
+            "display": "Atrial fibrillation (disorder)"
+          },
+          {
+            "code": "70995007",
+            "display": "Pulmonary hypertension (disorder)"
+          },
+          {
+            "code": "709044004",
+            "display": "Chronic kidney disease (disorder)"
+          },
+          {
+            "code": "266569009",
+            "display": "Benign prostatic hyperplasia (disorder)"
+          },
+          {
+            "code": "95570007",
+            "display": "Kidney stone (disorder)"
+          },
+          {
+            "code": "13645005",
+            "display": "Chronic obstructive lung disease (disorder)"
+          },
+          {
+            "code": "87433001",
+            "display": "Pulmonary emphysema (disorder)"
+          },
+          {
+            "code": "63480004",
+            "display": "Chronic bronchitis (disorder)"
+          },
+          {
+            "code": "195967001",
+            "display": "Asthma (disorder)"
+          },
+          {
+            "code": "78275009",
+            "display": "Obstructive sleep apnea syndrome (disorder)"
+          },
+          {
+            "code": "59282003",
+            "display": "Pulmonary embolism (disorder)"
+          },
+          {
+            "code": "73211009",
+            "display": "Diabetes mellitus (disorder)"
+          },
+          {
+            "code": "55822004",
+            "display": "Hyperlipidemia (disorder)"
+          },
+          {
+            "code": "414916001",
+            "display": "Obesity (disorder)"
+          },
+          {
+            "code": "40930008",
+            "display": "Hypothyroidism (disorder)"
+          },
+          {
+            "code": "34486009",
+            "display": "Hyperthyroidism (disorder)"
+          },
+          {
+            "code": "24526004",
+            "display": "Inflammatory bowel disease (disorder)"
+          },
+          {
+            "code": "328383001",
+            "display": "Chronic liver disease (disorder)"
+          },
+          {
+            "code": "235494005",
+            "display": "Chronic pancreatitis (disorder)"
+          },
+          {
+            "code": "235595009",
+            "display": "Gastroesophageal reflux disease (disorder)"
+          },
+          {
+            "code": "398050005",
+            "display": "Diverticular disease of colon (disorder)"
+          },
+          {
+            "code": "230690007",
+            "display": "Cerebrovascular accident (disorder)"
+          },
+          {
+            "code": "266257000",
+            "display": "Transient ischemic attack (disorder)"
+          },
+          {
+            "code": "49049000",
+            "display": "Parkinson's disease (disorder)"
+          },
+          {
+            "code": "26929004",
+            "display": "Alzheimer's disease (disorder)"
+          },
+          {
+            "code": "74732009",
+            "display": "Mental disorder (disorder)"
+          },
+          {
+            "code": "302226006",
+            "display": "Peripheral nerve disease (disorder)"
+          },
+          {
+            "code": "24700007",
+            "display": "Multiple sclerosis (disorder)"
+          },
+          {
+            "code": "55342001",
+            "display": "Neoplastic disease (disorder)"
+          },
+          {
+            "code": "86406008",
+            "display": "Human immunodeficiency virus infection (disorder)"
+          },
+          {
+            "code": "191268006",
+            "display": "Chronic anemia (disorder)"
+          },
+          {
+            "code": "85828009",
+            "display": "Autoimmune disease (disorder)"
+          },
+          {
+            "code": "38850007",
+            "display": "hronic arthropathy (disorder)"
+          },
+          {
+            "code": "64859006",
+            "display": "Osteoporosis (disorder)"
+          },
+          {
+            "code": "399957001",
+            "display": "Peripheral arterial occlusive disease (disorder)"
+          }
+        ]
+      }
+    ]
+  }
+}

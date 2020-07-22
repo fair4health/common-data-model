@@ -45,24 +45,42 @@ innovation programme under grant agreement No 824666*
 </thead>
 <tbody>
 <tr class="odd">
-<td>Autore</td>
+<td>Authors</td>
 <td>Giorgio Cangioli</td>
 <td>HL7 Europe</td>
-<td>giorgio.cangioli_at_gmail.com</td>
+<td>giorgio.cangioli_at_hl7europe.org</td>
 </tr>
 <tr class="even">
+<td>Authors</td>
+<td>A. Anil Sinaci</td>
+<td>SRDC</td>
+<td>anil_at_srdc.com.tr</td>
+</tr>
+<tr class="odd">
+<td>Authors</td>
+<td>Mert Gencturk</td>
+<td>SRDC</td>
+<td>mert_at_srdc.com.tr</td>
+</tr>
+<tr class="even">
+<td>Authors</td>
+<td>Alper Teoman</td>
+<td>SRDC</td>
+<td>alper_at_srdc.com.tr</td>
+</tr>
+<tr class="odd">
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Contributor</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Contributor</td>
 <td></td>
 <td></td>

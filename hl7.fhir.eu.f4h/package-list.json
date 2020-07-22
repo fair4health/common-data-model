@@ -1,7 +1,7 @@
 {
  "package-id" : "hl7.fhir.eu.f4h",
  "title" : "FAIR4Health HL7 FHIR Implemention Guide", 
- "canonical" : "http://hl7.eu/fhir/f4h", 
+ "canonical" : "http://hl7.eu/fhir/f4h/ig", 
  "introduction" : "The introduction that should appear in the FHIR IG registry",
  "list" : [{
   "version" : "current",

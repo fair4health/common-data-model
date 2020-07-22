@@ -1,0 +1,112 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Observation-lab-eu-f4h",
+  "url": "http://hl7.eu/fhir/f4h/ig/StructureDefinition/Observation-lab-eu-f4h",
+  "version": "0.1.0",
+  "name": "ObservationLabF4h",
+  "title": "Observation, laboratory result (Fair4Health)",
+  "status": "active",
+  "description": "This profile defines how to represent Laboratory Observation resources in FHIR in the context of the Fair4Health project. This profile is adapted from the HL7 IPS Observation-laboratory-uv-ips profile.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.eu/fhir/f4h/ig/StructureDefinition/Observation-eu-f4h",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "definition": "Describes what was observed. Sometimes this is called the observation \"name\". In this profile this code represents either a simple laboratory test or a laboratory study with multiple child observations",
+        "comment": "In the context of this profile, when the observation plays the role of a grouper of member sub-observations, the code represent the group (for instance a panel code). In case no code is available, at least a text shall be provided.",
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ObservationCode"
+            }
+          ],
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-observations-uv-ips"
+        }
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips"
+            ]
+          },
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"
+            ]
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "Range",
+            "profile": [
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/Range-uv-ips"
+            ]
+          },
+          {
+            "code": "Ratio",
+            "profile": [
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/Ratio-uv-ips"
+            ]
+          },
+          {
+            "code": "SampledData"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Period"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/uv/ips/ValueSet/result-coded-value-laboratory-gps-uv-ips"
+        }
+      },
+      {
+        "id": "Observation.hasMember",
+        "path": "Observation.hasMember",
+        "definition": "A reference to another Observation profiled by Observation-results-laboratory-uv-ips. The target observation (for instance an individual test member of a panel) is considered as a sub-observation of the current one, which plays the role of a grouper.",
+        "comment": "This element is used in the context of international patient summary when there is a need to group a collection of observations, because they belong to the same panel, or because they share a common interpretation comment, or a common media attachment (illustrative image or graph). In these cases, the current observation profiled as observation-laboratory-uv-trillium2 is the grouper, and its set of sub-observations are related observations using the type \"has-member\" and the profile observation-member-laboratory-uv-ips.  For a discussion on the ways Observations can be assembled in groups together see [Notes below](observation.html#4.20.4).",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-uv-ips",
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.hasMember.reference",
+        "path": "Observation.hasMember.reference",
+        "mustSupport": true
+      }
+    ]
+  }
+}

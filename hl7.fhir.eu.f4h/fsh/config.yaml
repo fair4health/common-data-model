@@ -11,7 +11,7 @@
 # │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: fair4health
-canonical: http://hl7.eu/fhir/f4h
+canonical: http://hl7.eu/fhir/f4h/ig
 version: 0.1.0
 name: FAIR4HealthImplementationGuide
 title: FAIR4 Health Implementation Guide

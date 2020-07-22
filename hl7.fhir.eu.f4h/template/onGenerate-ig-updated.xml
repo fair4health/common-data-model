@@ -6,19 +6,19 @@
       <div xmlns="http://www.w3.org/1999/xhtml">
          <h2>Fair4HealthImplementationGuide</h2>
          <p>The official URL for this implementation guide is: </p>
-         <pre>http://hl7.eu/fhir/f4h/ImplementationGuide/hl7.eu.fhir.f4h</pre>
+         <pre>http://hl7.eu/fhir/f4h/ig/ImplementationGuide/hl7.eu.fhir.f4h</pre>
          <div>
             <p>A brief description of what MyIG is about (probably the same text as in your readme)</p>
          </div>
       </div>
    </text>
-   <url value="http://hl7.eu/fhir/f4h/ImplementationGuide/hl7.eu.fhir.f4h"/>
+   <url value="http://hl7.eu/fhir/f4h/ig/ImplementationGuide/hl7.eu.fhir.f4h"/>
    <version value="0.0.1"/>
    <name value="Fair4HealthImplementationGuide"/>
    <title value="FAIR4Health FHIR Implementation Guide"/>
    <status value="draft"/>
    <experimental value="false"/>
-   <date value="2020-07-14T15:21:25+02:00"/>
+   <date value="2020-07-22T12:04:33+02:00"/>
    <publisher value="Fair4Health Project"/>
    <contact>
       <telecom>
@@ -86,7 +86,7 @@
          </reference>
          <name value="Patient: First Example"/>
          <description value="Patient: First Example"/>
-         <exampleCanonical value="http://hl7.eu/fhir/f4h/StructureDefinition/Patient-eu-f4h"/>
+         <exampleCanonical value="http://hl7.eu/fhir/f4h/ig/StructureDefinition/Patient-eu-f4h"/>
          <groupingId value="_ex_example"/>
       </resource>
       <resource>
@@ -318,6 +318,20 @@
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-MedicationStatement-eu-f4h.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/MedicationStatement-eu-f4h"/>
+         </reference>
+         <name value="MedicationStatement (Fair4Health)"/>
+         <description value="This profile defines how to represent MedicationStatement resources in FHIR in the context of the Fair4Health project."/>
+         <groupingId value="_str_profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="StructureDefinition-Observation-eu-f4h.html"/>
          </extension>
          <reference>
@@ -506,6 +520,11 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="StructureDefinition-MedicationStatement-eu-f4h.html"/>
+               <title value="MedicationStatement (Fair4Health)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="StructureDefinition-Observation-eu-f4h.html"/>
                <title value="Observation, generic (Fair4Health)"/>
                <generation value="generated"/>
@@ -636,7 +655,7 @@
       </parameter>
       <parameter>
          <code value="path-history"/>
-         <value value="http://hl7.eu/fhir/f4h/history.html"/>
+         <value value="http://hl7.eu/fhir/f4h/ig/history.html"/>
       </parameter>
       <parameter>
          <code value="template-html"/>

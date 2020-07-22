@@ -16,4 +16,7 @@
 	</name>
 	<gender value="male"/>
 	<birthDate value="1957"/>
+	<address>
+	<country value="AT"/>
+	</address>
 </Patient>

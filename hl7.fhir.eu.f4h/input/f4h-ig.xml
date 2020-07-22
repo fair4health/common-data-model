@@ -5,7 +5,7 @@
 	<!--  <extension url="http://hl7.org/fhir/tools/StructureDefinition/igpublisher-spreadsheet">
     <valueString value="resources-spreadsheet.xml"/>
   </extension>-->
-	<url value="http://hl7.eu/fhir/f4h/ImplementationGuide/hl7.eu.fhir.f4h"/>
+	<url value="http://hl7.eu/fhir/f4h/ig/ImplementationGuide/hl7.eu.fhir.f4h"/>
 	<!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
 	<version value="0.0.1"/>
 	<name value="Fair4HealthImplementationGuide"/>
@@ -50,7 +50,7 @@
 			</reference>
 			<name value="Patient: First Example"/>
 			<description value="Patient: First Example"/>
-			<exampleCanonical value="http://hl7.eu/fhir/f4h/StructureDefinition/Patient-eu-f4h"/>
+			<exampleCanonical value="http://hl7.eu/fhir/f4h/ig/StructureDefinition/Patient-eu-f4h"/>
 		</resource>
 <!-- 		<resource>
 			<reference>

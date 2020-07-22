@@ -1,134 +1,106 @@
 {
-  "resourceType": "StructureDefinition",
-  "id": "Condition-eu-f4h",
-  "url": "http://hl7.eu/fhir/f4h/StructureDefinition/Condition-eu-f4h",
-  "version": "0.1.0",
-  "name": "ConditionF4h",
-  "title": "Condition (Fair4Health)",
-  "status": "active",
-  "description": "This profile defines how to represent Condition resources in FHIR in the context of the Fair4Health project.",
-  "fhirVersion": "4.0.1",
-  "mapping": [
-    {
-      "identity": "workflow",
-      "uri": "http://hl7.org/fhir/workflow",
-      "name": "Workflow Pattern"
-    },
-    {
-      "identity": "sct-concept",
-      "uri": "http://snomed.info/conceptdomain",
-      "name": "SNOMED CT Concept Domain Binding"
-    },
-    {
-      "identity": "v2",
-      "uri": "http://hl7.org/v2",
-      "name": "HL7 v2 Mapping"
-    },
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    },
-    {
-      "identity": "w5",
-      "uri": "http://hl7.org/fhir/fivews",
-      "name": "FiveWs Pattern Mapping"
-    },
-    {
-      "identity": "sct-attr",
-      "uri": "http://snomed.org/attributebinding",
-      "name": "SNOMED CT Attribute Binding"
-    }
-  ],
-  "kind": "resource",
-  "abstract": false,
-  "type": "Condition",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Condition",
-  "derivation": "constraint",
-  "differential": {
-    "element": [
-      {
-        "id": "Condition.identifier",
-        "path": "Condition.identifier",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Condition.code",
-        "path": "Condition.code",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Condition.code.coding",
-        "path": "Condition.code.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://hl7.eu/fhir/f4h/ValueSet/diseases-f4h-icd10"
-        }
-      },
-      {
-        "id": "Condition.code.coding:snomed",
-        "path": "Condition.code.coding",
-        "sliceName": "snomed",
-        "short": "SNOMED CT concepts",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Condition.code.coding:snomed.system",
-        "path": "Condition.code.coding.system",
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Condition.code.coding:icd10",
-        "path": "Condition.code.coding",
-        "sliceName": "icd10",
-        "short": "SNOMED CT concepts",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Condition.code.coding:icd10.system",
-        "path": "Condition.code.coding.system",
-        "fixedUri": "http://hl7.org/fhir/sid/icd-10"
-      },
-      {
-        "id": "Condition.onset[x]",
-        "path": "Condition.onset[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "Condition.onsetDateTime",
-        "path": "Condition.onsetDateTime",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ],
-        "mustSupport": true
-      }
-    ]
-  }
+	"resourceType": "StructureDefinition",
+	"id": "Condition-eu-f4h",
+  "url": "http://hl7.eu/fhir/f4h/ig/StructureDefinition/Condition-eu-f4h",
+	"version": "0.1.0",
+	"name": "ConditionF4h",
+	"title": "Condition (Fair4Health)",
+	"status": "active",
+	"description": "This profile defines how to represent Condition resources in FHIR in the context of the Fair4Health project.",
+	"fhirVersion": "4.0.1",
+	"mapping": [
+		{
+			"identity": "workflow",
+			"uri": "http://hl7.org/fhir/workflow",
+			"name": "Workflow Pattern"
+		}, {
+			"identity": "sct-concept",
+			"uri": "http://snomed.info/conceptdomain",
+			"name": "SNOMED CT Concept Domain Binding"
+		}, {
+			"identity": "v2",
+			"uri": "http://hl7.org/v2",
+			"name": "HL7 v2 Mapping"
+		}, {
+			"identity": "rim",
+			"uri": "http://hl7.org/v3",
+			"name": "RIM Mapping"
+		}, {
+			"identity": "w5",
+			"uri": "http://hl7.org/fhir/fivews",
+			"name": "FiveWs Pattern Mapping"
+		}, {
+			"identity": "sct-attr",
+			"uri": "http://snomed.org/attributebinding",
+			"name": "SNOMED CT Attribute Binding"
+		}
+	],
+	"kind": "resource",
+	"abstract": false,
+	"type": "Condition",
+	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/Condition",
+	"derivation": "constraint",
+	"differential": {
+		"element": [
+			{
+				"id": "Condition.identifier",
+				"path": "Condition.identifier",
+				"min": 1,
+				"mustSupport": true
+			}, {
+				"id": "Condition.code",
+				"path": "Condition.code",
+				"min": 1,
+				"mustSupport": true
+			}, {
+				"id": "Condition.code.coding",
+				"path": "Condition.code.coding",
+				"slicing": {
+					"discriminator": [
+						{
+							"type": "value",
+							"path": "system"
+						}
+					],
+					"rules": "closed"
+				}
+			}, {
+				"id": "Condition.code.coding:snomed",
+				"path": "Condition.code.coding",
+				"sliceName": "snomed",
+				"short": "SNOMED CT concepts",
+				"max": "1",
+				"binding": {
+					"strength": "required",
+					"valueSet": "http://hl7.eu/fhir/f4h/ig/ValueSet/diseases-f4h-sct"
+				}
+			}, {
+				"id": "Condition.code.coding:snomed.system",
+				"path": "Condition.code.coding.system",
+				"fixedUri": "http://snomed.info/sct"
+			}, {
+				"id": "Condition.code.coding:icd10",
+				"path": "Condition.code.coding",
+				"sliceName": "icd10",
+				"short": "SNOMED CT concepts",
+				"max": "1",
+				"binding": {
+					"strength": "required",
+					"valueSet": "http://hl7.eu/fhir/f4h/ig/ValueSet/diseases-f4h-icd10"
+				}
+			}, {
+				"id": "Condition.code.coding:icd10.system",
+				"path": "Condition.code.coding.system",
+				"fixedUri": "http://hl7.org/fhir/sid/icd-10"
+			}, {
+				"id": "Condition.onset[x]",
+				"path": "Condition.onset[x]",
+				"type": [
+					{
+						"code": "dateTime"
+					}
+				]
+			}
+		]
+	}
 }

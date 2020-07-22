@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../fhir-all-xsd/structuredefinition.xsd">
 	<id value="Encounter2"/>
-	<url value="http://hl7.eu/fhir/f4h/StructureDefinition/Encounter2"/>
+	<url value="http://hl7.eu/fhir/f4h/ig/StructureDefinition/Encounter2"/>
 	<name value="Encounter2"/>
 	<title value="Opt-2: Encounter"/>
 	<status value="draft"/>
@@ -67,7 +67,7 @@
 			<min value="1"/>
 			<max value="1"/>
 			<type>
-				<code value="http://hl7.eu/fhir/f4h/StructureDefinition/Problem2"/>
+				<code value="http://hl7.eu/fhir/f4h/ig/StructureDefinition/Problem2"/>
 			</type>
 		</element>
 		<element id="Encounter2.medications">
@@ -77,7 +77,7 @@
 			<min value="1"/>
 			<max value="1"/>
 			<type>
-				<code value="http://hl7.eu/fhir/f4h/StructureDefinition/Medication2"/>
+				<code value="http://hl7.eu/fhir/f4h/ig/StructureDefinition/Medication2"/>
 			</type>
 		</element>
 		<element id="Encounter2.observations">
@@ -87,7 +87,7 @@
 			<min value="1"/>
 			<max value="1"/>
 			<type>
-				<code value="http://hl7.eu/fhir/f4h/StructureDefinition/Observation2"/>
+				<code value="http://hl7.eu/fhir/f4h/ig/StructureDefinition/Observation2"/>
 			</type>
 		</element>
 				<element id="Encounter2.labResults">
@@ -97,7 +97,7 @@
 			<min value="1"/>
 			<max value="1"/>
 			<type>
-				<code value="http://hl7.eu/fhir/f4h/StructureDefinition/LabResult2"/>
+				<code value="http://hl7.eu/fhir/f4h/ig/StructureDefinition/LabResult2"/>
 			</type>
 		</element>
 

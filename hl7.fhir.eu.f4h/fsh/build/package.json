@@ -1,8 +1,8 @@
 {
   "name": "fair4health",
   "version": "0.1.0",
-  "canonical": "http://hl7.eu/fhir/f4h",
-  "url": "http://hl7.eu/fhir/f4h",
+  "canonical": "http://hl7.eu/fhir/f4h/ig",
+  "url": "http://hl7.eu/fhir/f4h/ig",
   "title": "FAIR4 Health Implementation Guide",
   "description": "An example of how FSH can be used to create an IG about fish",
   "dependencies": {

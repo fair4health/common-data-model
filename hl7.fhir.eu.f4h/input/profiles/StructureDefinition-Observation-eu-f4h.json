@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "Observation-eu-f4h",
-  "url": "http://hl7.eu/fhir/f4h/StructureDefinition/Observation-eu-f4h",
+  "url": "http://hl7.eu/fhir/f4h/ig/StructureDefinition/Observation-eu-f4h",
   "version": "0.1.0",
   "name": "ObservationF4h",
   "title": "Observation, generic (Fair4Health)",

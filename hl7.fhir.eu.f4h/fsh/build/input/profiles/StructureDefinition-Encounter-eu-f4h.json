@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "Encounter-eu-f4h",
-  "url": "http://hl7.eu/fhir/f4h/StructureDefinition/Encounter-eu-f4h",
+  "url": "http://hl7.eu/fhir/f4h/ig/StructureDefinition/Encounter-eu-f4h",
   "version": "0.1.0",
   "name": "EncounterF4h",
   "title": "Encounter (Fair4Health)",
@@ -56,7 +56,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.eu/fhir/f4h/StructureDefinition/Patient-eu-f4h"
+              "http://hl7.eu/fhir/f4h/ig/StructureDefinition/Patient-eu-f4h"
             ]
           }
         ],

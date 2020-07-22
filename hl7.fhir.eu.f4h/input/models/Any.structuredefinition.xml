@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
 	<id value="Any"/>
-	<url value="http://hl7.eu/fhir/f4h/StructureDefinition/Any"/>
+	<url value="http://hl7.eu/fhir/f4h/ig/StructureDefinition/Any"/>
 	<name value="Any"/>
 	<title value="Abstract datatype: Any"/>
 	<status value="draft"/>

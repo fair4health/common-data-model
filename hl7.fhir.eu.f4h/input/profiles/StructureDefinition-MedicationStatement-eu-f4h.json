@@ -1,0 +1,79 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MedicationStatement-eu-f4h",
+  "url": "http://hl7.eu/fhir/f4h/ig/StructureDefinition/MedicationStatement-eu-f4h",
+  "version": "0.1.0",
+  "name": "MedicationStatementF4h",
+  "title": "MedicationStatement (Fair4Health)",
+  "status": "active",
+  "description": "This profile defines how to represent MedicationStatement resources in FHIR in the context of the Fair4Health project.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationStatement",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MedicationStatement",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationStatement.identifier",
+        "path": "MedicationStatement.identifier",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.status",
+        "path": "MedicationStatement.status",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.medication[x]",
+        "path": "MedicationStatement.medication[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.medication[x].coding.system",
+        "path": "MedicationStatement.medication[x].coding.system",
+        "fixedUri": "http://www.whocc.no/atc"
+      },
+      {
+        "id": "MedicationStatement.subject",
+        "path": "MedicationStatement.subject",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.effective[x]",
+        "path": "MedicationStatement.effective[x]",
+        "min": 1,
+        "mustSupport": true
+      }
+    ]
+  }
+}

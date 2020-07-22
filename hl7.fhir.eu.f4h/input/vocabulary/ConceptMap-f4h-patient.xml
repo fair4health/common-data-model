@@ -1,6 +1,6 @@
 <ConceptMap xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../fhir-all-xsd/codesystem.xsd">
 	<id value="ConceptMap-f4h-Patient"/>
-	<url value="http://hl7.eu/fhir/f4h/ConceptMap/ConceptMap-f4h-Patient"/>
+	<url value="http://hl7.eu/fhir/f4h/ig/ConceptMap/ConceptMap-f4h-Patient"/>
 	<version value="4.0.1"/>
 	<name value="ConceptMapF4hPatient"/>
 	<title value="Mapping - Patient - Logical Model to Profile"/>
@@ -23,11 +23,11 @@
 		</coding>
 	</jurisdiction>
 	<purpose value="Mapping Example."/>
-	<sourceUri value="http://hl7.eu/fhir/f4h/StructureDefinition/Patient"/>
-	<targetUri value="http://hl7.eu/fhir/f4h/StructureDefinition/Patient-eu-f4h"/>
+	<sourceUri value="http://hl7.eu/fhir/f4h/ig/StructureDefinition/Patient"/>
+	<targetUri value="http://hl7.eu/fhir/f4h/ig/StructureDefinition/Patient-eu-f4h"/>
 	<group>
-		<source value="http://hl7.eu/fhir/f4h/StructureDefinition/Patient"/>
-		<target value="http://hl7.eu/fhir/f4h/StructureDefinition/Patient-eu-f4h"/>
+		<source value="http://hl7.eu/fhir/f4h/ig/StructureDefinition/Patient"/>
+		<target value="http://hl7.eu/fhir/f4h/ig/StructureDefinition/Patient-eu-f4h"/>
 		<element>
 			<code value="Patient"/>
 			<display value="Patient F4H Attributes"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../fhir-all-xsd/structuredefinition.xsd">
 	<id value="PatientSet"/>
-	<url value="http://hl7.eu/fhir/f4h/StructureDefinition/PatientSet"/>
+	<url value="http://hl7.eu/fhir/f4h/ig/StructureDefinition/PatientSet"/>
 	<name value="PatientSet"/>
 	<title value="Opt-1: Patient Set"/>
 	<status value="draft"/>
@@ -26,7 +26,7 @@
 			<min value="1"/>
 			<max value="1"/>
 			<type>
-				<code value="http://hl7.eu/fhir/f4h/StructureDefinition/Patient"/>
+				<code value="http://hl7.eu/fhir/f4h/ig/StructureDefinition/Patient"/>
 			</type>
 		</element>
 		<element id="PatientSet.encounters">
@@ -36,7 +36,7 @@
 			<min value="1"/>
 			<max value="1"/>
 			<type>
-				<code value="http://hl7.eu/fhir/f4h/StructureDefinition/Encounter"/>
+				<code value="http://hl7.eu/fhir/f4h/ig/StructureDefinition/Encounter"/>
 			</type>
 		</element>
 		<element id="PatientSet.problems">
@@ -46,7 +46,7 @@
 			<min value="1"/>
 			<max value="1"/>
 			<type>
-				<code value="http://hl7.eu/fhir/f4h/StructureDefinition/Problem"/>
+				<code value="http://hl7.eu/fhir/f4h/ig/StructureDefinition/Problem"/>
 			</type>
 		</element>
 		<element id="PatientSet.medications">
@@ -56,7 +56,7 @@
 			<min value="1"/>
 			<max value="1"/>
 			<type>
-				<code value="http://hl7.eu/fhir/f4h/StructureDefinition/Medication"/>
+				<code value="http://hl7.eu/fhir/f4h/ig/StructureDefinition/Medication"/>
 			</type>
 		</element>
 		<element id="PatientSet.observations">
@@ -66,7 +66,7 @@
 			<min value="1"/>
 			<max value="1"/>
 			<type>
-				<code value="http://hl7.eu/fhir/f4h/StructureDefinition/Observation"/>
+				<code value="http://hl7.eu/fhir/f4h/ig/StructureDefinition/Observation"/>
 			</type>
 		</element>
 				<element id="PatientSet.labResults">
@@ -76,7 +76,7 @@
 			<min value="1"/>
 			<max value="1"/>
 			<type>
-				<code value="http://hl7.eu/fhir/f4h/StructureDefinition/LabResult"/>
+				<code value="http://hl7.eu/fhir/f4h/ig/StructureDefinition/LabResult"/>
 			</type>
 		</element>
 	</differential>

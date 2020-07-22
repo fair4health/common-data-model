@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "Patient-eu-f4h",
-  "url": "http://hl7.eu/fhir/f4h/StructureDefinition/Patient-eu-f4h",
+  "url": "http://hl7.eu/fhir/f4h/ig/StructureDefinition/Patient-eu-f4h",
   "version": "0.1.0",
   "name": "PatientF4h",
   "title": "Patient (Fair4Health)",

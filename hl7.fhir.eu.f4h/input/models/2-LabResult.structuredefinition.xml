@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../fhir-all-xsd/structuredefinition.xsd">
 	<id value="LabResult2"/>
-	<url value="http://hl7.eu/fhir/f4h/StructureDefinition/LabResult2"/>
+	<url value="http://hl7.eu/fhir/f4h/ig/StructureDefinition/LabResult2"/>
 	<name value="LabResult2"/>
 	<title value="Opt-2: LabResult"/>
 	<status value="draft"/>
