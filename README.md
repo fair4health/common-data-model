@@ -5,8 +5,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/fair4health/data-curation-tool"><img src="https://img.shields.io/github/license/fair4health/data-curation-tool" alt="License"></a>
-  <a href="https://github.com/fair4health/data-curation-tool/releases"><img src="https://img.shields.io/github/v/release/fair4health/data-curation-tool" alt="Releases"></a>
+  <a href="https://github.com/fair4health/common-data-model"><img src="https://img.shields.io/github/license/fair4health/common-data-model" alt="License"></a>
+  <a href="https://github.com/fair4health/common-data-model/releases"><img src="https://img.shields.io/github/v/release/fair4health/common-data-model" alt="Releases"></a>
 </p>
 
 ## About
