@@ -11,21 +11,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/sid/icd-10",
-        "concept": [
-          {
-            "code": "I50",
-            "display": "Heart Failure"
-          },
-          {
-            "code": "I10",
-            "display": "Hypertension"
-          },
-          {
-            "code": "N18",
-            "display": "Chronic Kidney Disease"
-          }
-        ]
+        "system": "http://hl7.org/fhir/sid/icd-10"
       }
     ]
   }
