@@ -3898,6 +3898,26 @@
             "definition": "http://hl7.org/fhir/SearchParameter/Resource-elements",
             "type": "string",
             "documentation": "What kind of information to return"
+        }, {
+            "name": "_lastUpdated",
+            "definition": "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated",
+            "type": "date",
+            "documentation": "When the resource version last changed"
+        }, {
+            "name": "_tag",
+            "definition": "http://hl7.org/fhir/SearchParameter/Resource-tag",
+            "type": "token",
+            "documentation": "Tags applied to this resource"
+        }, {
+            "name": "_security",
+            "definition": "http://hl7.org/fhir/SearchParameter/Resource-security",
+            "type": "token",
+            "documentation": "Security Labels applied to this resource"
+        }, {
+            "name": "_source",
+            "definition": "http://hl7.org/fhir/SearchParameter/Resource-source",
+            "type": "uri",
+            "documentation": "Identifies where the resource comes from"
         }],
         "operation": [
             {
