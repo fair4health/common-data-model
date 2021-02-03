@@ -80,3 +80,7 @@ The onFHIR image of the FAIR4Health uses several environment variables.
 
 **DB_NAME**: The name of the database to be created for running the onFHIR server.
 
+## Acknowledgement
+
+This research has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 824666,
+[FAIR4Health Project](https://www.fair4health.eu/) (Improving Health Research in EU through FAIR Data).
