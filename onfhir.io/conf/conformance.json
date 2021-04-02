@@ -1487,6 +1487,110 @@
                 "documentation": "The status of the report"
             }]
         }, {
+            "type" : "DocumentManifest",
+            "profile" : "http://hl7.org/fhir/StructureDefinition/DocumentManifest",
+            "interaction" : [{
+                "code" : "read",
+                "documentation" : "Implemented per the specification (or Insert other doco here)"
+            }, {
+                "code" : "vread",
+                "documentation" : "Implemented per the specification (or Insert other doco here)"
+            }, {
+                "code" : "update",
+                "documentation" : "Implemented per the specification (or Insert other doco here)"
+            }, {
+                "code" : "delete",
+                "documentation" : "Implemented per the specification (or Insert other doco here)"
+            }, {
+                "code" : "history-instance",
+                "documentation" : "Implemented per the specification (or Insert other doco here)"
+            }, {
+                "code" : "history-type",
+                "documentation" : "Implemented per the specification (or Insert other doco here)"
+            }, {
+                "code" : "create",
+                "documentation" : "Implemented per the specification (or Insert other doco here)"
+            }, {
+                "code" : "search-type",
+                "documentation" : "Implemented per the specification (or Insert other doco here)"
+            }],
+            "conditionalCreate" : true,
+            "conditionalUpdate" : true,
+            "conditionalDelete" : "multiple",
+            "referencePolicy" : ["literal", "logical"],
+            "searchInclude" : ["DocumentManifest.item",
+                "DocumentManifest.subject",
+                "DocumentManifest.author",
+                "DocumentManifest.related-ref",
+                "DocumentManifest.patient",
+                "DocumentManifest.recipient"],
+            "searchParam" : [{
+                "name" : "identifier",
+                "definition" : "http://hl7.org/fhir/SearchParameter/clinical-identifier",
+                "type" : "token",
+                "documentation" : "Unique Identifier for the set of documents"
+            }, {
+                "name" : "item",
+                "definition" : "http://hl7.org/fhir/SearchParameter/DocumentManifest-item",
+                "type" : "reference",
+                "documentation" : "Items in manifest"
+            }, {
+                "name" : "related-id",
+                "definition" : "http://hl7.org/fhir/SearchParameter/DocumentManifest-related-id",
+                "type" : "token",
+                "documentation" : "Identifiers of things that are related"
+            }, {
+                "name" : "subject",
+                "definition" : "http://hl7.org/fhir/SearchParameter/DocumentManifest-subject",
+                "type" : "reference",
+                "documentation" : "The subject of the set of documents"
+            }, {
+                "name" : "author",
+                "definition" : "http://hl7.org/fhir/SearchParameter/DocumentManifest-author",
+                "type" : "reference",
+                "documentation" : "Who and/or what authored the DocumentManifest"
+            }, {
+                "name" : "created",
+                "definition" : "http://hl7.org/fhir/SearchParameter/DocumentManifest-created",
+                "type" : "date",
+                "documentation" : "When this document manifest created"
+            }, {
+                "name" : "description",
+                "definition" : "http://hl7.org/fhir/SearchParameter/DocumentManifest-description",
+                "type" : "string",
+                "documentation" : "Human-readable description (title)"
+            }, {
+                "name" : "source",
+                "definition" : "http://hl7.org/fhir/SearchParameter/DocumentManifest-source",
+                "type" : "uri",
+                "documentation" : "The source system/application/software"
+            }, {
+                "name" : "type",
+                "definition" : "http://hl7.org/fhir/SearchParameter/clinical-type",
+                "type" : "token",
+                "documentation" : "Kind of document set"
+            }, {
+                "name" : "related-ref",
+                "definition" : "http://hl7.org/fhir/SearchParameter/DocumentManifest-related-ref",
+                "type" : "reference",
+                "documentation" : "Related Resource"
+            }, {
+                "name" : "patient",
+                "definition" : "http://hl7.org/fhir/SearchParameter/clinical-patient",
+                "type" : "reference",
+                "documentation" : "The subject of the set of documents"
+            }, {
+                "name" : "recipient",
+                "definition" : "http://hl7.org/fhir/SearchParameter/DocumentManifest-recipient",
+                "type" : "reference",
+                "documentation" : "Intended to get notified about this set of documents"
+            }, {
+                "name" : "status",
+                "definition" : "http://hl7.org/fhir/SearchParameter/DocumentManifest-status",
+                "type" : "token",
+                "documentation" : "current | superseded | entered-in-error"
+            }]
+        }, {
             "type": "Encounter",
             "profile": "http://hl7.org/fhir/StructureDefinition/Encounter",
             "supportedProfile": [
@@ -3441,6 +3545,94 @@
                 "definition": "http://hl7.org/fhir/SearchParameter/Procedure-status",
                 "type": "token",
                 "documentation": "preparation | in-progress | not-done | on-hold | stopped | completed | entered-in-error | unknown"
+            }]
+        }, {
+            "type" : "Provenance",
+            "profile" : "http://hl7.org/fhir/StructureDefinition/Provenance",
+            "interaction" : [{
+                "code" : "read",
+                "documentation" : "Implemented per the specification (or Insert other doco here)"
+            }, {
+                "code" : "vread",
+                "documentation" : "Implemented per the specification (or Insert other doco here)"
+            }, {
+                "code" : "update",
+                "documentation" : "Implemented per the specification (or Insert other doco here)"
+            }, {
+                "code" : "delete",
+                "documentation" : "Implemented per the specification (or Insert other doco here)"
+            }, {
+                "code" : "history-instance",
+                "documentation" : "Implemented per the specification (or Insert other doco here)"
+            }, {
+                "code" : "history-type",
+                "documentation" : "Implemented per the specification (or Insert other doco here)"
+            }, {
+                "code" : "create",
+                "documentation" : "Implemented per the specification (or Insert other doco here)"
+            }, {
+                "code" : "search-type",
+                "documentation" : "Implemented per the specification (or Insert other doco here)"
+            }],
+            "conditionalCreate" : true,
+            "conditionalUpdate" : true,
+            "conditionalDelete" : "multiple",
+            "referencePolicy" : ["literal", "logical"],
+            "searchInclude" : ["Provenance.agent",
+                "Provenance.patient",
+                "Provenance.location",
+                "Provenance.entity",
+                "Provenance.target"],
+            "searchParam" : [{
+                "name" : "agent-type",
+                "definition" : "http://hl7.org/fhir/SearchParameter/Provenance-agent-type",
+                "type" : "token",
+                "documentation" : "How the agent participated"
+            }, {
+                "name" : "agent",
+                "definition" : "http://hl7.org/fhir/SearchParameter/Provenance-agent",
+                "type" : "reference",
+                "documentation" : "Who participated"
+            }, {
+                "name" : "signature-type",
+                "definition" : "http://hl7.org/fhir/SearchParameter/Provenance-signature-type",
+                "type" : "token",
+                "documentation" : "Indication of the reason the entity signed the object(s)"
+            }, {
+                "name" : "patient",
+                "definition" : "http://hl7.org/fhir/SearchParameter/Provenance-patient",
+                "type" : "reference",
+                "documentation" : "Target Reference(s) (usually version specific)"
+            }, {
+                "name" : "location",
+                "definition" : "http://hl7.org/fhir/SearchParameter/Provenance-location",
+                "type" : "reference",
+                "documentation" : "Where the activity occurred, if relevant"
+            }, {
+                "name" : "recorded",
+                "definition" : "http://hl7.org/fhir/SearchParameter/Provenance-recorded",
+                "type" : "date",
+                "documentation" : "When the activity was recorded / updated"
+            }, {
+                "name" : "agent-role",
+                "definition" : "http://hl7.org/fhir/SearchParameter/Provenance-agent-role",
+                "type" : "token",
+                "documentation" : "What the agents role was"
+            }, {
+                "name" : "when",
+                "definition" : "http://hl7.org/fhir/SearchParameter/Provenance-when",
+                "type" : "date",
+                "documentation" : "When the activity occurred"
+            }, {
+                "name" : "entity",
+                "definition" : "http://hl7.org/fhir/SearchParameter/Provenance-entity",
+                "type" : "reference",
+                "documentation" : "Identity of entity"
+            }, {
+                "name" : "target",
+                "definition" : "http://hl7.org/fhir/SearchParameter/Provenance-target",
+                "type" : "reference",
+                "documentation" : "Target Reference(s) (usually version specific)"
             }]
         }, {
             "type": "RiskAssessment",
