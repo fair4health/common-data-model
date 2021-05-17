@@ -11,7 +11,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://hl7.eu/fhir/f4h/codeSystem/encounter-type-f4h",
+        "system": "http://hl7.eu/fhir/f4h/codesystem/f4h-encounter-type",
         "concept": [
           {
             "code": "planned",
