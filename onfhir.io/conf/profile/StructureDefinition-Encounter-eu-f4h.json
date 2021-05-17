@@ -1999,7 +1999,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.eu/fhir/f4h/StructureDefinition/Patient-eu-f4h"
+              "http://hl7.org/fhir/StructureDefinition/Patient"
             ]
           }
         ],
